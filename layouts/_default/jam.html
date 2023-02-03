@@ -1,0 +1,9 @@
+{{ define "main" }}
+<h1 class="title">{{ .Params.name }}</h1>
+  {{ .Content }}
+  <ul>
+    {{ range .Params.games }}
+      <li><a href="{{ .url }}">{{ .title }} by {{ .credit }}</a> - {{ .description }}</li>
+    {{ end }}
+  </ul>
+{{ end }}
