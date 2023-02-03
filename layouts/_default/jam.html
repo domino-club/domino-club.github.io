@@ -1,12 +1,13 @@
 {{ define "main" }}
-  <h1 class="title">{{ .Params.name }}</h1>
+  {{ $jam := .File.TranslationBaseName }}
+  <h1>{{ .Params.name }}</h1>
   {{ .Content }}
-  <ul>
+  <section class="jam-games-listing">
     {{ range .Params.games }}
-      {{ $img := printf "/img/%s/%s.png" $.Page.File.TranslationBaseName .itch }}
+      {{ $img := printf "/img/%s/%s.png" $jam .itch }}
       {{ $url := printf "https://dominoclub.itch.io/%s" .itch }}
       {{ $game := merge . (dict "img" $img "url" $url) }}
       {{- partial "game-entry.html" $game -}}
     {{ end }}
-  </ul>
+  </section>
 {{ end }}

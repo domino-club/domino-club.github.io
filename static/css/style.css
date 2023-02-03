@@ -1,0 +1,5 @@
+.jam-games-listing {
+    display: grid;
+    grid-template-columns: repeat(3, 315px);
+    gap: 8px;
+}
