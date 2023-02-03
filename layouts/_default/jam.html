@@ -1,14 +1,12 @@
 {{ define "main" }}
-<h1 class="title">{{ .Params.name }}</h1>
+  <h1 class="title">{{ .Params.name }}</h1>
   {{ .Content }}
   <ul>
     {{ range .Params.games }}
-      <li>
-        <a href="{{ .url }}">{{ .title }} by {{ .credit }}</a>
-        {{ if (isset . "description") }} 
-          - {{ .description }}
-        {{ end }}
-      </li>
+      {{ $img := printf "/img/%s/%s.png" $.Page.File.TranslationBaseName .itch }}
+      {{ $url := printf "https://dominoclub.itch.io/%s" .itch }}
+      {{ $game := merge . (dict "img" $img "url" $url) }}
+      {{- partial "game-entry.html" $game -}}
     {{ end }}
   </ul>
 {{ end }}
