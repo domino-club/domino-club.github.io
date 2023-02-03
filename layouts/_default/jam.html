@@ -3,7 +3,12 @@
   {{ .Content }}
   <ul>
     {{ range .Params.games }}
-      <li><a href="{{ .url }}">{{ .title }} by {{ .credit }}</a> - {{ .description }}</li>
+      <li>
+        <a href="{{ .url }}">{{ .title }} by {{ .credit }}</a>
+        {{ if (isset . "description") }} 
+          - {{ .description }}
+        {{ end }}
+      </li>
     {{ end }}
   </ul>
 {{ end }}
