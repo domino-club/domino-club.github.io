@@ -11,8 +11,8 @@ games:
   - itch: shuttle-secks
     title: Shuttle Secks Murder Space Yoda
     credit: SUS OZEN
-    
     description: yoda in the space shuttle secks, what happens
+    
   - itch: against-the-will-of-the-chainsaw
     title: against the will of the chainsaw
     credit: THE ENTHUSIAST
@@ -85,7 +85,7 @@ games:
     title: Murder on a Metal Planet
     credit: Wretched Flesh 
     description: A murder is solved, the pleasure of punishment is all yours
-    
+
   - itch: joey-wamones-highly-cursed-record-collection
     title: Joey Wamone's Highly Cursed Record Collection
     credit: Joey Wamone!
