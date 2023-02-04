@@ -1,6 +1,6 @@
 {{ define "main" }}
   <h1 class="title">{{ .Site.Title }}</h1>
-  <p>{{ .Content }}</p>
+  {{ .Content }}
   {{/* for every jam page, */}}
   {{ range where .Site.RegularPages "Type" "jams" }}
     {{/* jam page name is used to find images */}}
