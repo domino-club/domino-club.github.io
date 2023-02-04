@@ -1,6 +1,8 @@
 ---
 layout: jam
 name: domino metal and flesh jam
+date: 2022-09-04T00:00:00Z
+banneralt: collage of game screenshots, "DOMINO CLUB - Metal & Flesh Jam. Sep 4 - Oct 9, 2022. Click 4 games"
 games:
   - itch: greaser
     title: Greaser
