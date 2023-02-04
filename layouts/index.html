@@ -1,8 +1,11 @@
 {{ define "main" }}
-<h1 class="title">{{ .Site.Title }}</h1>
-  {{ .Content }}
+  <h1 class="title">{{ .Site.Title }}</h1>
+  <p>{{ .Content }}</p>
+  {{/* for every jam page, */}}
   {{ range where .Site.RegularPages "Type" "jams" }}
+    {{/* jam page name is used to find images */}}
+    {{ $jam := .File.TranslationBaseName }}
     <h2>{{ .Params.name }}</h2>
-    <a href="{{.Permalink}}"><img src="/img/{{ .File.TranslationBaseName }}/banner.png" alt="{{ .Params.banneralt }}"></a>
+    <a href="{{ .Permalink }}"><img src="/img/{{ $jam }}/banner.png" alt="{{ .Params.banneralt }}"></a>
   {{ end }}
 {{ end }}

@@ -17,3 +17,5 @@
 ### non-generated
  * static/img/ - jam banners, game thumbnails etc
  * static/css/ - css styles
+
+everything in these folders gets copied verbatim to the website

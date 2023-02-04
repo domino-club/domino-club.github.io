@@ -1,12 +1,18 @@
 {{ define "main" }}
+  {{/* jam page name is used to find images */}}
   {{ $jam := .File.TranslationBaseName }}
   <h1>{{ .Params.name }}</h1>
   {{ .Content }}
   <section class="jam-games-listing">
+    {{/* for every game in this jam, */}}
     {{ range .Params.games }}
+      {{/* determine thumbnail path from jam page name and itch page name */}}
       {{ $img := printf "/img/%s/%s.png" $jam .itch }}
       {{ $url := printf "https://dominoclub.itch.io/%s" .itch }}
       {{ $game := merge . (dict "img" $img "url" $url) }}
+
+      {{/* pass relevant data to per-game template */}}
+      {{/* maybe it would be clearer inline instead, make your choice */}}
       {{- partial "game-entry.html" $game -}}
     {{ end }}
   </section>
