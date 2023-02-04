@@ -6,7 +6,7 @@ games:
   - itch: candle-cove-by-theodora-gamefeel
     title: Candle Cove
     credit: Theodora Gamefeel
-    description: it's time to light the candles for the dark ritual. i hope othing bad happens.
+    description: it's time to light the candles for the dark ritual. i hope nothing bad happens.
 
   - itch: paradigmfetish
     title: paradigmfetish
