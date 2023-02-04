@@ -2,7 +2,7 @@
   <h1 class="title">{{ .Site.Title }}</h1>
   <p>{{ .Content }}</p>
   {{/* for every jam page, */}}
-  {{ range where .Site.RegularPages.Reverse "Type" "jams" }}
+  {{ range where .Site.RegularPages "Type" "jams" }}
     {{/* jam page name is used to find images */}}
     {{ $jam := .File.TranslationBaseName }}
     <h2>{{ .Params.name }}</h2>
