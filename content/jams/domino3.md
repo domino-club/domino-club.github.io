@@ -1,6 +1,7 @@
 ---
 layout: jam
 name: domino underground jam
+banneralt: collage of game screenshots, "DOMINO CLUB - Subteranean Jam. FEB 21 - MAR 22, 2022. Click to play games"
 games:
   - itch: candle-cove-by-theodora-gamefeel
     title: Candle Cove

@@ -1,6 +1,7 @@
 ---
 layout: jam
 name: domino jam
+banneralt: collage of game screenshots, "DOMINO CLUB - DOMINO JAM. JUL 11 - AUG 7, 2021. CLICK TO PLAY GAMES"
 games:
   - itch: candle-cove-by-theodora-gamefeel
     title: Candle Cove

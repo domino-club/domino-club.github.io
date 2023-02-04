@@ -3,6 +3,6 @@
   {{ .Content }}
   {{ range where .Site.RegularPages "Type" "jams" }}
     <h2>{{ .Params.name }}</h2>
-    <a href="{{.Permalink}}"><img src="/img/{{ .File.TranslationBaseName }}/banner.png"></a>
+    <a href="{{.Permalink}}"><img src="/img/{{ .File.TranslationBaseName }}/banner.png" alt="{{ .Params.banneralt }}"></a>
   {{ end }}
 {{ end }}

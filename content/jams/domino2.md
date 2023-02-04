@@ -1,6 +1,7 @@
 ---
 layout: jam
 name: domino tri jam
+banneralt: collage of game screenshots, "DOMINO CLUB - TRI JAM. OCT 1-31, 2021. CLICK FOR GAMES"
 games:
   - itch: candle-cove-by-theodora-gamefeel
     title: Candle Cove
