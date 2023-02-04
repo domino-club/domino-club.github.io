@@ -7,8 +7,8 @@
     {{/* for every game in this jam, */}}
     {{ range .Params.games }}
       {{/* determine thumbnail path from jam page name and itch page name */}}
-      {{ $img := printf "/img/%s/%s.png" $jam .itch }}
-      {{ $url := printf "https://dominoclub.itch.io/%s" .itch }}
+      {{ $img := print "/img/" $jam "/" .itch ".png" }}
+      {{ $url := print "https://dominoclub.itch.io/" .itch }}
       {{ $game := merge . (dict "img" $img "url" $url) }}
 
       {{/* pass relevant data to per-game template */}}
