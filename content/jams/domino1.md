@@ -11,63 +11,67 @@ games:
   - itch: paradigmfetish
     title: paradigmfetish
     credit: Hanna Violence
-    description: ditherpunk VN sex monologue on the moon
+    description: A conman on the moon gets in over his head. A woman monologues about pegging.
 
   - itch: the-instruction-manual
     title: The Instruction Manual
     credit: The Pursuer and a Lady From Paris
-    description: Instruction manual for having sex in space
+    description: Instructions on how to have sex in space.
 
   - itch: party
     title: party
     credit: DIGGITY DOG
-    description: if pandemic ever ends...
+    description: If one day the pandemic ends...Zonies will party.
 
   - itch: we-are-all-but-bones-and-dust
     title: we are all but bones and dust
     credit: parva viventem
-    description: every one of us
+    description: You're dead! We're dead! Want to go ghosting?
 
   - itch: this-was-once-a-place-of-honour
     title: THIS WAS ONCE A PLACE OF HONOUR
     credit: SUZY PHOENIX
-    description: This place is a message... and part of a system of messages... pay attention to it!
+    description: We can only pray that what we leave behind acts as a warning.
 
   - itch: new-style
     title: new style
     credit: Mr Style
+    description: Thinking about the future.
 
   - itch: the-dream-sequences
     title: the dream sequences
     credit: IX
-    description: lightly fictionalized endless lockdown dream diary
+    description: Descriptions of dreams had in quarantine.
 
   - itch: mother-of-monsters
     title: mother of monsters
     credit: tee grandis
-    description: deep dream
+    description: A game about abandoning community.
 
   - itch: nekkid
     title: Nekkid
     credit: ydobon
-    description: get nekkid
+    description: A flickguy for when you want to get nekkid!
 
   - itch: scooter-friends
     title: friends
     credit: dj dick
+    description: The most state-of-the art Scooter visual novel ever to be produced!
 
   - itch: garfmaker
     title: Garfmaker
     credit: count von ersatz
-    description: garfield
+    description: Make you own personal Garfield!
 
   - itch: cerulean-3000
     title: Cerulean 3000
     credit: da_homa_0112
+    description: You are the new tenant of Cerulean 3000. But which unit is yours?
 
   - itch: average-nite-on-tinybird-dot-zone
     title: Average Nite on TinyBird Dot Zone
     credit: FSO and TTC
+    description: It was just another regular Zone Nite...until everything changed...
 ---
 
 a jam :)
