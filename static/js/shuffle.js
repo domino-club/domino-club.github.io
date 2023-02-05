@@ -22,8 +22,11 @@ function shuffleGames() {
     const permuted = permutation.map((i) => container.children[i]);
     container.replaceChildren(...permuted);
 
-    const target = document.querySelector(window.location.hash);
-    target?.scrollIntoView();
+    // rescroll to particular game based on url fragment
+    if (window.location.hash.length > 0) {
+        const target = document.querySelector(window.location.hash);
+        target?.scrollIntoView();
+    }
 }
 
 function shuffle(array) {
