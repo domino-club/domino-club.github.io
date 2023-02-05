@@ -21,6 +21,9 @@ function shuffleGames() {
     // apply permutation
     const permuted = permutation.map((i) => container.children[i]);
     container.replaceChildren(...permuted);
+
+    const target = document.querySelector(window.location.hash);
+    target?.scrollIntoView();
 }
 
 function shuffle(array) {
