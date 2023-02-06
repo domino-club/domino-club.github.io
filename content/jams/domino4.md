@@ -161,5 +161,3 @@ games:
     title: community management
     credit: Samantha
 ---
-
-another jam :)

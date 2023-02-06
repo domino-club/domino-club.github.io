@@ -91,5 +91,3 @@ games:
     credit: Joey Wamone!
     description: a witch turned all joey's records into microgames! the only cure?? beating the microgames!!
 ---
-
-another jam :)

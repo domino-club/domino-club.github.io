@@ -74,5 +74,3 @@ games:
     credit: FSO and TTC
     description: It was just another regular Zone Nite...until everything changed...
 ---
-
-a jam :)

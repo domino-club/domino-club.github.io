@@ -2,7 +2,9 @@
   {{/* jam page name is used to find images */}}
   {{ $jam := .File.TranslationBaseName }}
   <h1>{{ .Params.name }}</h1>
-  {{ .Content }}
+  {{ with .Content }}
+    {{ . }}
+  {{ end }}
   <section class="jam-games-listing" data-jam="{{ $jam }}">
     {{/* for every game in this jam, */}}
     {{ range .Params.games }}
