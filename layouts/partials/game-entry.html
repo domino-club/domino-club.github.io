@@ -1,8 +1,8 @@
-<article id="{{ .itch }}">
-  <img src="{{ .img }}">
-  <a href="{{ .url }}">{{ .title }} by {{ .credit }}</a>
+<article class="game" id="{{ .itch }}">
+  <p><img class="game_img" src="{{ .img }}"></p>
+  <p class="game_link"><a href="{{ .url }}">{{ .title }}</a></p><p class="author">by <em>{{ .credit }}</em></p>
   {{/* if there is a description, */}}
   {{ with .description }} 
-    <p>{{ . }}</p>
+    <p class="game_description">{{ . }}</p>
   {{ end }}
 </article>

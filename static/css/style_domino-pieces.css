@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,300&family=Palanquin+Dark&family=Space+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-color: #6e6e6e;
+    --main-border-color: #b1b1b1;
+    --main-author-color: #afafaf;
+    --secondary-author-color: #dfdfdf;
+}
+
+html {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: 'Space Mono', monospace;
+    scrollbar-color: white rgba(0, 0, 0, 0);
+}
+
+html::-webkit-scrollbar {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+h1 {
+    font-family: 'Palanquin Dark', sans-serif;
+    text-align: center;
+}
+
+h1::before {
+    content: "🀵 "
+}
+
+body p {
+    text-align: center;
+}
+
+.jam-games-listing {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-items: center;
+    gap: 1.2rem;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.game {
+    border: 2px solid var(--main-border-color);
+    border-radius: 3rem;
+    box-shadow: 8px 8px var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    max-width: 350px;
+}
+
+.game p {
+    margin: 1rem;
+}
+
+.game_img {
+    border-radius: 2.5rem;
+    border: 2px solid var(--main-border-color);
+    width: 315px;
+    height: 250px;
+}
+
+.game_link {
+    border-bottom: 2px solid var(--main-border-color);
+    padding-bottom: 0.5rem;
+    width: 80%;
+}
+
+.game_link a {
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px var(--main-bg-color);
+    font-family: 'Palanquin Dark', sans-serif;
+    text-decoration: none;
+}
+
+.game_link a:hover,
+.game_link a:focus {
+    text-shadow: 0 0 8px white;
+}
+
+.author {
+    color: var(--main-author-color);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.author em {
+    color: var(--secondary-author-color)
+}
+
+.game_description {
+    font-family: 'Space Mono', monospace;
+}
