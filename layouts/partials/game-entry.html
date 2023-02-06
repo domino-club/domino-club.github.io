@@ -1,6 +1,15 @@
 <article class="game" id="{{ .itch }}">
-  <p><img class="game_img" src="{{ .img }}"></p>
-  <p class="game_link"><a href="{{ .url }}">{{ .title }}</a></p><p class="author">by <em>{{ .credit }}</em></p>
+  <p>
+    <a href="{{ .url }}" target="_blank">
+      <img class="game_img" src="{{ .img }}" alt="click to open {{ .title }}">
+    </a>
+  </p>
+  <p class="game_link">
+    <a href="{{ .url }}" target="_blank">{{ .title }}</a>
+  </p>
+  <p class="author">
+    by <em>{{ .credit }}</em>
+  </p>
   {{/* if there is a description, */}}
   {{ with .description }} 
     <p class="game_description">{{ . }}</p>
