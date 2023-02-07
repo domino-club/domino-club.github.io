@@ -67,7 +67,8 @@ body p {
     max-width: 350px;
 }
 
-.game p {
+.game > p,
+.game > a {
     margin: 1rem;
 }
 
