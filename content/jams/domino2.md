@@ -2,7 +2,18 @@
 layout: jam
 name: domino tri jam
 title: TRI JAM
-daOZEN
+date: 2021-10-01T00:00:00Z
+images:
+  - img/domino2/banner.png
+description: TRI JAM. OCT 1-31, 2021
+games:
+  - itch: proximity
+    title: Proximity
+    credit: Allison Ford
+
+  - itch: shuttle-secks
+    title: Shuttle Secks Murder Space Yoda
+    credit: SUS OZEN
     description: yoda in the space shuttle secks, what happens
     
   - itch: against-the-will-of-the-chainsaw
