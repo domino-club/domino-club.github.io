@@ -6,6 +6,6 @@
     {{/* jam page name is used to find images */}}
     {{ $jam := .File.TranslationBaseName }}
     <h2>{{ .Params.name }}</h2>
-    <a href="{{ .Permalink }}"><img src="/img/{{ $jam }}/banner.png" alt="{{ .Params.banneralt }}"></a>
+    <a href="{{ .Permalink }}"><img src="{{ index .Params.images 0 }}" alt="{{ .Params.banneralt }}"></a>
   {{ end }}
 {{ end }}
