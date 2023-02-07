@@ -114,7 +114,7 @@ games:
 
   - itch: this-machine
     title: This machine
-    credit: by a friend I haven't seen in awhile
+    credit: a friend I haven't seen in awhile
 
   - itch: kiss-me-in-the-shadows-of-every-spark
     title: kiss me in the shadows of every spark
