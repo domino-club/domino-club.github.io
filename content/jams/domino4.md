@@ -82,7 +82,7 @@ games:
 
   - itch: bath
     title: bath
-    credit: by jerking it
+    credit: jerking it
 
   - itch: 5-min-machine
     title: 5-min-machine
