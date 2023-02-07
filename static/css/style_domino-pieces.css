@@ -73,8 +73,9 @@ body p {
 }
 
 .game_img {
+    border: 0;
     border-radius: 2.5rem;
-    border: 2px solid var(--main-border-color);
+    outline: 2px solid var(--main-border-color);
     width: 315px;
     height: 250px;
 }
