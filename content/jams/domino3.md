@@ -2,7 +2,7 @@
 layout: jam
 name: domino underground jam
 date: 2022-02-21T00:00:00Z
-banneralt: collage of game screenshots, "DOMINO CLUB - Subteranean Jam. FEB 21 - MAR 22, 2022. Click to play games"
+banneralt: collage of game screenshots, "DOMINO CLUB - Subterranean Jam. FEB 21 - MAR 22, 2022. Click to play games"
 games:
   - itch: the-green-fog
     title: The Green Fog
