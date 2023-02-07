@@ -5,7 +5,7 @@ title: DOMINO JAM
 date: 2021-07-11T00:00:00Z
 images:
   - img/domino1/banner.png
-banneralt: collage of game screenshots, "DOMINO CLUB - DOMINO JAM. JUL 11 - AUG 7, 2021. CLICK TO PLAY GAMES"
+description: DOMINO JAM. JUL 11 - AUG 7, 2021
 games:
   - itch: candle-cove-by-theodora-gamefeel
     title: Candle Cove
