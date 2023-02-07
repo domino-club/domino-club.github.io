@@ -3,6 +3,8 @@ layout: jam
 name: domino tri jam
 title: TRI JAM
 date: 2021-10-01T00:00:00Z
+images:
+  - img/domino2/banner.png
 banneralt: collage of game screenshots, "DOMINO CLUB - TRI JAM. OCT 1-31, 2021. CLICK FOR GAMES"
 games:
   - itch: proximity
