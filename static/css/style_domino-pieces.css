@@ -37,7 +37,7 @@ h1 {
 }
 
 h1::before {
-    content: "🀵 "
+    content: "🁧 "
 }
 
 body p {
@@ -55,7 +55,7 @@ body p {
 
 .game {
     border: 2px solid var(--main-border-color);
-    border-radius: 3rem;
+    border-radius: 2rem;
     box-shadow: 8px 8px var(--main-bg-color);
     display: flex;
     flex-direction: column;
@@ -64,11 +64,11 @@ body p {
     text-align: center;
     height: 100%;
     width: 100%;
-    max-width: 350px;
+    max-width: 315px;
+    overflow: hidden;
 }
 
-.game>p,
-.game>a {
+.game>p {
     margin: 1rem;
 }
 
@@ -114,6 +114,15 @@ body p {
 .jam-nav {
     padding: 0.5rem 0;
     text-align: center;
+}
+
+.jam-nav a,
+.jam-nav span {
+    text-decoration: none;
+    font-style: bold;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Palanquin Dark', sans-serif;
 }
 
 .jam-nav span {
