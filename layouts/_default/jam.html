@@ -1,4 +1,6 @@
 {{ define "main" }}
+  {{ partial "jam-nav.html" .Page }}
+
   {{/* jam page name is used to find images */}}
   {{ $jam := .File.TranslationBaseName }}
   <h1>{{ .Params.name }}</h1>
@@ -19,4 +21,6 @@
     {{ end }}
   </section>
   <script src="/js/shuffle.js"></script>
+
+  {{ partial "jam-nav.html" .Page }}
 {{ end }}

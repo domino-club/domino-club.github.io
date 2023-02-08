@@ -1,0 +1,15 @@
+<nav class="jam-nav">
+  {{ if .Prev }}
+    <a rel="prev" href="{{ .Prev.Permalink }}" title="{{ .Prev.LinkTitle }}"><</a>
+  {{ else }}
+    <span title="This is the earliest jam"><</span>
+  {{ end }}
+
+  <a href="{{ .Parent.Parent.Permalink }}" title="{{ .Parent.Parent.LinkTitle }}">^</a>
+
+  {{ if .Next }}
+    <a rel="next" href="{{ .Next.Permalink }}" title="{{ .Next.LinkTitle }}">></a>
+  {{ else }}
+    <span title="This is the most recent jam">></span>
+  {{ end }}
+</nav>

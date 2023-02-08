@@ -111,3 +111,12 @@ body p {
 .game_description {
     font-family: 'Space Mono', monospace;
 }
+
+.jam-nav {
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+.jam-nav span {
+    cursor: not-allowed;
+}
