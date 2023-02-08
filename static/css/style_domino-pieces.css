@@ -67,21 +67,20 @@ body p {
     max-width: 350px;
 }
 
-.game > p,
-.game > a {
+.game>p,
+.game>a {
     margin: 1rem;
 }
 
 .game_img {
-    border: 0;
-    border-radius: 2.5rem;
-    outline: 2px solid var(--main-border-color);
+    border-bottom: 2px solid var(--main-border-color);
     width: 315px;
     height: 250px;
+    display: content-box;
 }
 
 .game_link {
-    border-bottom: 2px solid var(--main-border-color);
+    border-bottom: 1px dashed var(--main-border-color);
     padding-bottom: 0.5rem;
     width: 80%;
 }
@@ -109,7 +108,7 @@ body p {
 }
 
 .game_description {
-    font-family: 'Space Mono', monospace;
+    display: none;
 }
 
 .jam-nav {
