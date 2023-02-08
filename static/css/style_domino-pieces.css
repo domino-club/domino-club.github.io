@@ -1,5 +1,11 @@
+/* global */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,300&family=Palanquin+Dark&family=Space+Mono&display=swap');
 
+@counter-style base-seven-enjoyer {
+    symbols: 🁤 🁥 🁦 🁧 🁨 🁩 🁪 🁫 🁬 🁭 🁮 🁯 🁰 🁱 🁲 🁳 🁴 🁵 🁶 🁷 🁸 🁹 🁺 🁻 🁼 🁽 🁾 🁿 🂀 🂁 🂂 🂃 🂄 🂅 🂆 🂇 🂈 🂉 🂊 🂋 🂌 🂍 🂎 🂏 🂐 🂑 🂒 🂓;
+    system: fixed;
+    suffix: " ";
+}
 
 * {
     box-sizing: border-box;
@@ -10,6 +16,7 @@
     --main-border-color: #b1b1b1;
     --main-author-color: #afafaf;
     --secondary-author-color: #dfdfdf;
+    --main-link-color: #b3b3b3;
 }
 
 html {
@@ -32,19 +39,60 @@ html::-webkit-scrollbar-track {
     background-color: rgba(0, 0, 0, 0);
 }
 
-h1 {
+h1,
+h2 {
     font-family: 'Palanquin Dark', sans-serif;
-    text-align: center;
-}
-
-h1::before {
-    content: "🁧 "
 }
 
 body p {
     text-align: center;
+    margin: 1rem;
 }
 
+a {
+    color: var(--main-link-color);
+}
+
+a:focus,
+a:hover {
+    color: white;
+}
+
+/* index */
+#banner {
+    width: 100%;
+}
+
+.all_jams {
+    list-style-type: base-seven-enjoyer;
+    font-family: 'Palanquin Dark', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 0;
+}
+
+.all_jams li::marker {
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: 1.5em;
+}
+
+.all_jams li h2 {
+    display: inline;
+}
+
+.all_jams li img {
+    display: block;
+    margin: 0.5rem;
+    box-shadow: 8px 0 var(--main-bg-color);
+    border: 2px solid var(--main-border-color);
+    border-radius: 2rem;
+}
+
+/* jams */
 .jam-games-listing {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
