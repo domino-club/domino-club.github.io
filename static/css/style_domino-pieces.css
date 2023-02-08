@@ -63,6 +63,7 @@ body p {
     justify-content: flex-start;
     text-align: center;
     height: 100%;
+    min-height: 500px;
     width: 100%;
     max-width: 315px;
     overflow: hidden;
