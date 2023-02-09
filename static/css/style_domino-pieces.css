@@ -175,6 +175,6 @@ a:hover {
     font-family: 'Palanquin Dark', sans-serif;
 }
 
-.jam-nav span {
+.jam-nav > span {
     cursor: not-allowed;
 }

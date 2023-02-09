@@ -1,15 +1,22 @@
+{{ $thisPage := . }}
+{{ range $idx, $page := (where .Site.RegularPages.ByDate "Type" "jams") }}
+  {{ if eq $thisPage . }}
+    {{ .Scratch.Set "index" (add $idx 1) }}
+  {{ end }}
+{{ end }}
+
 <nav class="jam-nav">
   {{ if .Prev }}
-    <a rel="prev" href="{{ .Prev.Permalink }}" title="{{ .Prev.LinkTitle }}">🀸</a>
+    <a rel="prev" href="{{ .Prev.Permalink }}" title="{{ .Prev.LinkTitle }}" aria-label="Previous: {{ .Prev.LinkTitle }}">{{ partial "domino.html" (slice (add (.Scratch.Get "index") -1) "left") }}</a>
   {{ else }}
-    <span title="This is the earliest jam">🀰</span>
+    <span role="img" title="This is the earliest jam" aria-label="This is the earliest jam">{{ partial "domino.html" (slice -1 "left") }}</span>
   {{ end }}
 
-  <a href="{{ .Parent.Parent.Permalink }}" title="{{ .Parent.Parent.LinkTitle }}">🁪</a>
+  <a href="{{ .Parent.Parent.Permalink }}" title="{{ .Parent.Parent.LinkTitle }}" aria-label="{{ .Parent.Parent.LinkTitle }}">{{ partial "domino.html" (slice (.Scratch.Get "index") "up") }}</a>
 
   {{ if .Next }}
-    <a rel="next" href="{{ .Next.Permalink }}" title="{{ .Next.LinkTitle }}">🀲</a>
+    <a rel="next" href="{{ .Next.Permalink }}" title="{{ .Next.LinkTitle }}" aria-label="Next: {{ .Next.LinkTitle }}">{{ partial "domino.html" (slice (add (.Scratch.Get "index") 1) "right") }}</a>
   {{ else }}
-    <span title="This is the most recent jam">🀰</span>
+    <span role="img" title="This is the most recent jam" aria-label="This is the most recent jam">{{ partial "domino.html" (slice -1 "right") }}</span>
   {{ end }}
 </nav>
