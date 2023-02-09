@@ -154,7 +154,7 @@ a:hover {
 }
 
 .author em {
-    color: var(--secondary-author-color)
+    color: var(--secondary-author-color);
 }
 
 .game_description {
