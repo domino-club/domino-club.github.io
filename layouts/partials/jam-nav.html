@@ -1,4 +1,5 @@
 {{ $thisPage := . }}
+{{ .Scratch.Set "index" 0 }}
 {{ range $idx, $page := (where .Site.RegularPages.ByDate "Type" "jams") }}
   {{ if eq $thisPage . }}
     {{ .Scratch.Set "index" (add $idx 1) }}
