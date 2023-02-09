@@ -2,9 +2,10 @@
   <a href="{{ .url }}" target="_blank" rel="noopener" aria-label="{{ .title }} by {{ .credit }}">
     <img class="game_img" src="{{ .img }}" alt="">
     <p class="game_link">{{ .title }}</p>
-    <p class="author">
-      by <em>{{ .credit }}</em>
-    </p>
+    {{/* if there is an author, */}}
+    {{ with .credit }}
+      <p class="author">by <em>{{ . }}</em></p>
+    {{ end }}
     {{/* if there is a description, */}}
     {{ with .description }} 
       <p class="game_description">{{ . }}</p>
