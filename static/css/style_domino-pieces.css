@@ -41,6 +41,7 @@ html::-webkit-scrollbar-track {
 
 h1,
 h2 {
+    text-align: center;
     font-family: 'Palanquin Dark', sans-serif;
 }
 
