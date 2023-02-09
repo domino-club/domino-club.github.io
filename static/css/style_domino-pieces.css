@@ -114,6 +114,7 @@ a:hover {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .game>a {
@@ -131,7 +132,8 @@ a:hover {
     text-shadow: 0 0 8px white;
 }
 
-.game>*{
+.game>*,
+.game>a>img {
     flex: none;
     max-width: 315px;
 }
@@ -153,6 +155,7 @@ a:hover {
     text-align: center;
 
     padding: 0 1rem;
+    word-break: break-word;
 }
 
 .game_text > p {
