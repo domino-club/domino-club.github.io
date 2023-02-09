@@ -180,10 +180,6 @@ a:hover {
     color: var(--secondary-author-color);
 }
 
-.game_description {
-    display: none;
-}
-
 .jam-nav {
     white-space: nowrap;
     padding: 0.5rem 0;
