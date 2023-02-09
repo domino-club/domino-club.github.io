@@ -139,7 +139,6 @@ a:hover {
 }
 
 .game_img {
-    border-bottom: 2px solid var(--main-border-color);
     height: 250px;
     box-sizing: content-box;
     object-fit: cover;
@@ -147,6 +146,8 @@ a:hover {
 }
 
 .game_text {
+    width: 100%;
+    border-top: 2px solid var(--main-border-color);
     flex: auto;
     display: flex;
     flex-direction: column;
