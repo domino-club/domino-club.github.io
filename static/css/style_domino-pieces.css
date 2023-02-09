@@ -162,12 +162,14 @@ a:hover {
 }
 
 .jam-nav {
+    white-space: nowrap;
     padding: 0.5rem 0;
     text-align: center;
 }
 
-.jam-nav a,
-.jam-nav span {
+.jam-nav > a,
+.jam-nav > span {
+    display: inline-block;
     text-decoration: none;
     font-style: bold;
     color: white;
@@ -177,4 +179,11 @@ a:hover {
 
 .jam-nav > span {
     cursor: not-allowed;
+}
+
+@media (pointer: coarse) {
+    .jam-nav > a,
+    .jam-nav > span {
+        padding: 0.5rem;
+    }
 }
