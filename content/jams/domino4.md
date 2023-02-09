@@ -22,7 +22,9 @@ games:
 
   - itch: gutless
     title: GUTLESS
-    credit: HAGFISH CONSORTIUM and SENSORY LEAKAGE
+    credit:
+      - HAGFISH CONSORTIUM
+      - SENSORY LEAKAGE
     description: hadopelagic false light / pain is a language that you speak well enough
 
   - itch: ttogatep
@@ -137,7 +139,9 @@ games:
 
   - itch: dyar-beach
     title: Dyar Beach
-    credit: MULTIPLICATION BITCH & Ogilvy
+    credit:
+      - MULTIPLICATION BITCH
+      - Ogilvy
     description: an account of the disaster at Dyar Beach
 
   - itch: body-of-work

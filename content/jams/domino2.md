@@ -38,7 +38,9 @@ games:
 
   - itch: antler
     title: antler
-    credit: Doublekick Constantin & Annihilistator
+    credit:
+      - Doublekick Constantin
+      - Annihilistator
     description: Eight billionaires embark on a space shuttle to fuck robots (and each other) in orbit. Oh, the gas mask? Don't worry about it.
 
   - itch: sssm-in-the-shadow-of-jupiter

@@ -69,11 +69,16 @@ games:
 
   - itch: i-the-living-flame
     title: I, The Living Flame
-    credit: MC Ellum, Snash, and Colt Crunture
+    credit:
+      - MC Ellum
+      - Snash
+      - Colt Crunture
 
   - itch: i-ate-your-friends
     title: I ATE YOUR FRIENDS
-    credit: HIGH ATTITUDE ENTITY & DECORATOR
+    credit:
+      - HIGH ATTITUDE ENTITY
+      - DECORATOR
     description: A DOCUMENT OF THE TIME I ATE YOUR FRIENDS
 
   - itch: heritage
@@ -88,7 +93,9 @@ games:
 
   - itch: stairdown
     title: stairdown
-    credit: carol renderman & palm fronds
+    credit:
+      - carol renderman
+      - palm fronds
     description: FIND THE AMULET OF THE GOD TOH LIVE
 
   - itch: ninth-circle

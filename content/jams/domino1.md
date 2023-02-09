@@ -19,7 +19,9 @@ games:
 
   - itch: the-instruction-manual
     title: The Instruction Manual
-    credit: The Pursuer and a Lady From Paris
+    credit:
+      - The Pursuer
+      - a Lady From Paris
     description: Instructions on how to have sex in space.
 
   - itch: party
@@ -74,6 +76,8 @@ games:
 
   - itch: average-nite-on-tinybird-dot-zone
     title: Average Nite on TinyBird Dot Zone
-    credit: FSO and TTC
+    credit: 
+      - FSO
+      - TTC
     description: It was just another regular Zone Nite...until everything changed...
 ---

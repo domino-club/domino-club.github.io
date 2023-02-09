@@ -6,7 +6,21 @@
     <a  href="{{ .url }}" target="_blank" rel="noopener" class="game_link">{{ .title }}</a>
     {{/* if there is an author, */}}
     {{ with .credit }}
-      <p class="author">by&nbsp;<em>{{ . }}</em></p>
+      <p class="author">by&nbsp;
+        {{- if reflect.IsSlice . -}}
+          {{- $num := len . -}}
+          {{- range $index, $author := . -}}
+            {{- if eq $index (add $num -1) }}
+              and&nbsp;
+            {{- else if $index -}}
+              ,
+            {{ end -}}
+            <em>{{ . }}</em>
+          {{- end -}}
+        {{- else -}}
+          <em>{{ . }}</em>
+        {{- end -}}
+      </p>
     {{ end }}
   </div>
 </article>
