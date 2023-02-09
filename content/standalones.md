@@ -56,10 +56,6 @@ games:
     title: I, The Minotaur
     credit: secret fanta
 
-  - itch: i-the-minotaur
-    title: I, The Minotaur
-    credit: secret fanta
-
   - itch: santa-bongo-museum-of-modern-art
     title: santa bongo museum of modern art
     credit: secret fanta
