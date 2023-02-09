@@ -13,7 +13,7 @@
     <span role="img" title="This is the earliest jam" aria-label="This is the earliest jam">{{ partial "domino.html" (slice -1 "left") }}</span>
   {{ end }}
 
-  <a href="{{ .Parent.Parent.Permalink }}" title="{{ .Parent.Parent.LinkTitle }}" aria-label="{{ .Parent.Parent.LinkTitle }}">{{ partial "domino.html" (slice (.Scratch.Get "index") "up") }}</a>
+  <a href="{{ .Site.Home.Permalink }}" title="{{ .Site.Home.LinkTitle }}" aria-label="{{ .Site.Home.LinkTitle }}">{{ partial "domino.html" (slice (.Scratch.Get "index") "up") }}</a>
 
   {{ if .Next }}
     <a rel="next" href="{{ .Next.Permalink }}" title="{{ .Next.LinkTitle }}" aria-label="Next: {{ .Next.LinkTitle }}">{{ partial "domino.html" (slice (add (.Scratch.Get "index") 1) "right") }}</a>
