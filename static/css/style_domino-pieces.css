@@ -66,6 +66,7 @@ a:hover {
 
 .all_jams {
     list-style-type: base-seven-enjoyer;
+    list-style-position: inside;
     font-family: 'Palanquin Dark', sans-serif;
     text-align: center;
     display: flex;
