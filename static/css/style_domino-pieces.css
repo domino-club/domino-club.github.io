@@ -113,31 +113,27 @@ a:hover {
     height: 500px;
     min-height: 500px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .game>a {
-    height: 100%;
+    display: contents;
+}
+
+.game a {
     color: inherit;
     text-decoration: none;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
 }
 
 
-.game>a:hover .game_link,
-.game>a:focus .game_link {
+.game_link:hover,
+.game_link:focus {
     text-shadow: 0 0 8px white;
 }
 
-.game>a>p {
-    margin: 1rem auto;
-    padding-inline: 1rem;
-}
-
-.game>a>*{
+.game>*{
+    flex: none;
     max-width: 315px;
 }
 
@@ -150,10 +146,12 @@ a:hover {
 }
 
 .game_text {
+    flex: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 
     padding: 0 1rem;
 }
