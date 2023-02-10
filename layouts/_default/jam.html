@@ -3,7 +3,7 @@
 
   {{/* jam page name is used to find images */}}
   {{ $jam := .File.TranslationBaseName }}
-  <h1>{{ .Params.name }}</h1>
+  <h1>{{ .Params.title }}</h1>
   {{ with .Content }}
     {{ . }}
   {{ end }}
