@@ -2,3 +2,5 @@ baseURL = 'https://domino-club.github.io'
 languageCode = 'en-us'
 title = 'DOMINO CLUB'
 enableRobotsTXT = true
+[imaging]
+	quality = 100
