@@ -76,17 +76,14 @@ h2 {
 }
 
 body {
-    max-width: 960px;
+    max-width: 980px;
+    padding: 20px;
     margin: auto;
     overflow-x: hidden;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-body p {
-    margin: 1rem;
 }
 
 a {
@@ -114,11 +111,6 @@ a:hover {
     justify-content: flex-start;
     gap: 2rem;
     padding: 0;
-    margin: 2%;
-}
-
-.all_jams li {
-    padding-inline: 0.5rem;
 }
 
 .all_jams li>a {
