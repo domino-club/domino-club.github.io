@@ -114,6 +114,11 @@ a:hover {
     justify-content: flex-start;
     gap: 2rem;
     padding: 0;
+    width: 100%;
+}
+
+.all_jams li {
+    width: 100%;
 }
 
 .all_jams li>a {
