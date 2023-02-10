@@ -1,7 +1,13 @@
 <article class="game" id="{{ .itch }}">
   <a href="{{ .url }}" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
     {{ $image := resources.Get .img }}
-    <img loading="lazy" class="game_img" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" style="background-color: {{ index $image.Colors 0 }};" alt="">
+    {{ $imageWebp := $image.Fit "315x250 webp drawing q100" }}
+    {{ $imagePng := $image.Fit "315x250 png" }}
+    <picture class="game_img">
+      <source srcset="{{ $imageWebp.RelPermalink }}" type="image/webp" />
+      <source srcset="{{ $imagePng.RelPermalink }}" type="image/png" />
+      <img loading="lazy" src="{{ $imagePng.RelPermalink }}" width="{{ $imageWebp.Width }}" height="{{ $imageWebp.Height }}" style="background-color: {{ index $imageWebp.Colors 0 }};" alt="">
+    </picture>
   </a>
   <div class="game_text">
     <a href="{{ .url }}" target="_blank" rel="noopener" class="game_link">{{ .title }}</a>
