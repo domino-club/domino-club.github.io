@@ -1,7 +1,6 @@
 ---
 layout: jam
-name: domino underground jam
-title: Subterranean Jam
+title: SUBTERRANEAN JAM
 date: 2022-02-21T00:00:00Z
 images:
   - img/domino3/banner.png

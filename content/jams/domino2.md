@@ -1,7 +1,6 @@
 ---
 layout: jam
-name: domino tri jam
-title: TRI JAM
+title: TRI-JAM
 date: 2021-10-01T00:00:00Z
 images:
   - img/domino2/banner.png

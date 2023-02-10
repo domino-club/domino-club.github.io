@@ -1,6 +1,5 @@
 ---
 layout: jam
-name: domino jam
 title: DOMINO JAM
 date: 2021-07-11T00:00:00Z
 images:

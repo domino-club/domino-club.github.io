@@ -1,7 +1,6 @@
 ---
 layout: jam
-name: domino metal and flesh jam
-title: Metal & Flesh Jam
+title: METAL & FLESH JAM
 date: 2022-09-04T00:00:00Z
 images:
   - img/domino4/banner.png
