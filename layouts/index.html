@@ -3,10 +3,17 @@
   {{ .Content }}
   <ol class="all_jams" reversed>
   {{/* for every jam page, */}}
-  {{ range where .Site.RegularPages.ByDate.Reverse "Type" "jams" }}
-    <li><h2>{{ .Params.name }}</h2>
-    <a href="{{ .Permalink }}"><img src="{{ index .Params.images 0 }}" alt="collage of game screenshots: {{ .Params.description }}. CLICK TO PLAY GAMES"></a>
-  {{ end }}
-</li>
+  {{ $jams := where .Site.RegularPages.ByDate.Reverse "Type" "jams" }}
+  {{ range $index, $page := $jams }}
+    <li>
+      <span class="jam-text">
+        {{ partial "domino.html" (slice (sub (len $jams) $index) "down") }}
+        <h2>
+          {{ .Params.name }}
+        </h2>
+      </span>
+      <a href="{{ .Permalink }}"><img src="{{ index .Params.images 0 }}" alt="collage of game screenshots: {{ .Params.description }}. CLICK TO PLAY GAMES"></a>
+    {{ end }}
+    </li>
   </ol>
 {{ end }}

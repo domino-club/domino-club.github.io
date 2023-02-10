@@ -1,12 +1,6 @@
 /* global */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,300&family=Palanquin+Dark&family=Space+Mono&display=swap');
 
-@counter-style base-seven-enjoyer {
-    symbols: 🁤 🁥 🁦 🁧 🁨 🁩 🁪 🁫 🁬 🁭 🁮 🁯 🁰 🁱 🁲 🁳 🁴 🁵 🁶 🁷 🁸 🁹 🁺 🁻 🁼 🁽 🁾 🁿 🂀 🂁 🂂 🂃 🂄 🂅 🂆 🂇 🂈 🂉 🂊 🂋 🂌 🂍 🂎 🂏 🂐 🂑 🂒 🂓;
-    system: fixed;
-    suffix: " ";
-}
-
 * {
     box-sizing: border-box;
 }
@@ -65,8 +59,7 @@ a:hover {
 }
 
 .all_jams {
-    list-style-type: base-seven-enjoyer;
-    list-style-position: inside;
+    list-style: none;
     font-family: 'Palanquin Dark', sans-serif;
     text-align: center;
     display: flex;
@@ -81,6 +74,22 @@ a:hover {
     padding-inline: 0.5rem;
 }
 
+.all_jams li .jam-text {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 0.5rem;
+}
+
+.all_jams li .jam-text > span {
+    flex: none;
+    font-size: 1.5rem;
+}
+
+.all_jams li .jam-text > h2 {
+    flex: auto;
+}
+
 .all_jams li > a {
     transition: filter 80ms ease-out;
 }
@@ -90,11 +99,6 @@ a:hover {
 }
 .all_jams li > a:active {
     filter: contrast(0.95);
-}
-
-.all_jams li::marker {
-    font-family: 'Palanquin Dark', sans-serif;
-    font-size: 1.5em;
 }
 
 .all_jams li h2 {
@@ -107,6 +111,7 @@ a:hover {
     box-shadow: 8px 0 var(--main-bg-color);
     border: 2px solid var(--main-border-color);
     border-radius: 2rem;
+    max-width: 100%;
 }
 
 /* jams */
