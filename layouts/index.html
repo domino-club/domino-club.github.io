@@ -4,8 +4,6 @@
   <ol class="all_jams" reversed>
   {{/* for every jam page, */}}
   {{ range where .Site.RegularPages.ByDate.Reverse "Type" "jams" }}
-    {{/* jam page name is used to find images */}}
-    {{ $jam := .File.TranslationBaseName }}
     <li><h2>{{ .Params.name }}</h2>
     <a href="{{ .Permalink }}"><img src="{{ index .Params.images 0 }}" alt="collage of game screenshots: {{ .Params.description }}. CLICK TO PLAY GAMES"></a>
   {{ end }}
