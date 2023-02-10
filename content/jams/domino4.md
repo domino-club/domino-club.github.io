@@ -51,7 +51,9 @@ games:
 
   - itch: greasemnk
     title: greasemnk
-    credit: heaven's guard
+    credit: 
+      - heaven's guard
+      - eigengrau
     description: death and erosion in old houses. hidden machine faces
 
   - itch: laaor
