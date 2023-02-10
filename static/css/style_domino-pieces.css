@@ -4,7 +4,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url("/fonts/SpaceMono-Regular.ttf");
+    src: url("/fonts/SpaceMono-Regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -12,14 +12,14 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url("/fonts/PalanquinDark-Regular.ttf");
+    src: url("/fonts/PalanquinDark-Regular.woff2") format("woff2");
 }
 
 @font-face {
     font-family: 'Josefin Sans';
     font-style: normal;
     font-display: swap;
-    src: url("/fonts/JosefinSans-VariableFont_wght.ttf");
+    src: url("/fonts/JosefinSans-VariableFont_wght.woff2") format("woff2");
 }
 
 
@@ -27,7 +27,7 @@
     font-family: 'Josefin Sans';
     font-style: italic;
     font-display: swap;
-    src: url("/fonts/JosefinSans-Italic-VariableFont_wght.ttf");
+    src: url("/fonts/JosefinSans-Italic-VariableFont_wght.woff2") format("woff2");
 }
 
 @counter-style base-seven-enjoyer {
