@@ -18,10 +18,6 @@ games:
     title: TIME THEFT MANIFESTO
     credit: PRUDENT STEALINGS
 
-  - itch: time-theft-manifesto
-    title: TIME THEFT MANIFESTO
-    credit: PRUDENT STEALINGS
-
   - itch: no-thanks
     title: no thanks, i don't want to collaborate :)
     credit: I Love You Employed Girl
