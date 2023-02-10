@@ -103,7 +103,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    gap: 1rem;
+    gap: 2rem;
     padding: 0;
     margin: 2%;
 }
@@ -128,10 +128,6 @@ a:hover {
 .all_jams li::marker {
     font-family: 'Palanquin Dark', sans-serif;
     font-size: 1.5em;
-}
-
-.all_jams li h2 {
-    display: inline;
 }
 
 .all_jams li img {
