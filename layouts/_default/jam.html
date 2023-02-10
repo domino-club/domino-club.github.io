@@ -11,7 +11,7 @@
     {{/* for every game in this jam, */}}
     {{ range .Params.games }}
       {{/* determine thumbnail path from jam page name and itch page name */}}
-      {{ $img := print "/img/" $jam "/" .itch ".png" }}
+      {{ $img := print "img/" $jam "/" .itch ".png" }}
       {{ $url := print "https://dominoclub.itch.io/" .itch }}
       {{ $game := merge . (dict "img" $img "url" $url) }}
 
