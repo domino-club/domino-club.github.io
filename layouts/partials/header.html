@@ -1,2 +1,8 @@
 {{- $image := resources.Get "img/banner.png" -}}
-<img id="banner" loading="eager" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="DOMINO club">
+{{- if not .IsHome -}}
+  <a href="/">
+{{- end -}}
+  <img id="banner" loading="eager" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="DOMINO club">
+{{- if not .IsHome -}}
+  </a>
+{{- end -}}
