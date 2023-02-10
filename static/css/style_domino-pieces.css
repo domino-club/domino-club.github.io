@@ -1,5 +1,34 @@
 /* global */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,300&family=Palanquin+Dark&family=Space+Mono&display=swap');
+@font-face {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/static/fonts/SpaceMono-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Palaquin Dark";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/static/fonts/PalanquinDark-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-display: swap;
+    src: url("/static/fonts/JosefinSans-VariableFont_wght.ttf");
+}
+
+
+@font-face {
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    font-display: swap;
+    src: url("/static/fonts/JosefinSans-Italic-VariableFont_wght.ttf");
+}
 
 @counter-style base-seven-enjoyer {
     symbols: 🁤 🁥 🁦 🁧 🁨 🁩 🁪 🁫 🁬 🁭 🁮 🁯 🁰 🁱 🁲 🁳 🁴 🁵 🁶 🁷 🁸 🁹 🁺 🁻 🁼 🁽 🁾 🁿 🂀 🂁 🂂 🂃 🂄 🂅 🂆 🂇 🂈 🂉 🂊 🂋 🂌 🂍 🂎 🂏 🂐 🂑 🂒 🂓;
@@ -81,14 +110,16 @@ a:hover {
     padding-inline: 0.5rem;
 }
 
-.all_jams li > a {
+.all_jams li>a {
     transition: filter 80ms ease-out;
 }
-.all_jams li > a:hover,
-.all_jams li > a:focus {
+
+.all_jams li>a:hover,
+.all_jams li>a:focus {
     filter: contrast(0.95) brightness(1.05);
 }
-.all_jams li > a:active {
+
+.all_jams li>a:active {
     filter: contrast(0.95);
 }
 
@@ -164,6 +195,7 @@ a:hover {
 .game_img:hover {
     filter: contrast(0.95) brightness(1.05);
 }
+
 .game_img:active {
     filter: contrast(0.95);
 }
@@ -182,12 +214,13 @@ a:hover {
     word-break: break-word;
 }
 
-.game_text > p {
+.game_text>p {
     margin: 0;
 }
 
 .game_link {
     font-size: 1.5rem;
+    font-weight: bold;
     text-shadow: 1px 1px var(--main-bg-color);
     font-family: 'Palanquin Dark', sans-serif;
     border-bottom: 1px dashed var(--main-border-color);
@@ -198,6 +231,7 @@ a:hover {
     padding-top: .5rem;
     color: var(--main-author-color);
     font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
 }
 
 .author em {
@@ -210,8 +244,8 @@ a:hover {
     text-align: center;
 }
 
-.jam-nav > a,
-.jam-nav > span {
+.jam-nav>a,
+.jam-nav>span {
     display: inline-block;
     text-decoration: none;
     font-style: bold;
@@ -220,32 +254,53 @@ a:hover {
     font-family: 'Palanquin Dark', sans-serif;
 }
 
-.jam-nav > span {
+.jam-nav>span {
     cursor: not-allowed;
 }
 
-.jam-nav > a {
+.jam-nav>a {
     transition: opacity 80ms ease-out;
 }
-.jam-nav > a:hover,
-.jam-nav > a:focus {
+
+.jam-nav>a:hover,
+.jam-nav>a:focus {
     opacity: 0.8;
 }
-.jam-nav > a[rel]:active {
+
+.jam-nav>a[rel]:active {
     opacity: 0.7;
     animation: blame-nat 200ms linear infinite;
     animation-delay: 500ms;
 }
-.jam-nav > a[rel="prev"]:active {
+
+.jam-nav>a[rel="prev"]:active {
     animation-name: blame-nat2;
 }
 
-@keyframes blame-nat { from {transform: rotate(0) } to { transform: rotate(360deg) } }
-@keyframes blame-nat2 { from {transform: rotate(0) } to { transform: rotate(-360deg) } }
+@keyframes blame-nat {
+    from {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes blame-nat2 {
+    from {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(-360deg)
+    }
+}
 
 @media (pointer: coarse) {
-    .jam-nav > a,
-    .jam-nav > span {
+
+    .jam-nav>a,
+    .jam-nav>span {
         padding: 0.5rem;
     }
 }
