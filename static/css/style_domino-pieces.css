@@ -4,7 +4,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url("/static/fonts/SpaceMono-Regular.ttf");
+    src: url("/fonts/SpaceMono-Regular.ttf");
 }
 
 @font-face {
@@ -12,14 +12,14 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url("/static/fonts/PalanquinDark-Regular.ttf");
+    src: url("/fonts/PalanquinDark-Regular.ttf");
 }
 
 @font-face {
     font-family: 'Josefin Sans';
     font-style: normal;
     font-display: swap;
-    src: url("/static/fonts/JosefinSans-VariableFont_wght.ttf");
+    src: url("/fonts/JosefinSans-VariableFont_wght.ttf");
 }
 
 
@@ -27,7 +27,7 @@
     font-family: 'Josefin Sans';
     font-style: italic;
     font-display: swap;
-    src: url("/static/fonts/JosefinSans-Italic-VariableFont_wght.ttf");
+    src: url("/fonts/JosefinSans-Italic-VariableFont_wght.ttf");
 }
 
 @counter-style base-seven-enjoyer {
@@ -72,6 +72,7 @@ h1,
 h2 {
     text-align: center;
     font-family: 'Palanquin Dark', sans-serif;
+    margin: 2%;
 }
 
 body p {
@@ -104,6 +105,7 @@ a:hover {
     justify-content: flex-start;
     gap: 1rem;
     padding: 0;
+    margin: 2%;
 }
 
 .all_jams li {
@@ -138,6 +140,7 @@ a:hover {
     box-shadow: 8px 0 var(--main-bg-color);
     border: 2px solid var(--main-border-color);
     border-radius: 2rem;
+    width: 100%;
 }
 
 /* jams */
