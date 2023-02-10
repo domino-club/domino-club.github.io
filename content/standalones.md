@@ -1,6 +1,5 @@
 ---
 layout: jam
-name: STANDALONES
 title: STANDALONES
 images:
   - img/standalones/banner.png
