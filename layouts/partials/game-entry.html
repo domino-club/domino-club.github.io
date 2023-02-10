@@ -17,11 +17,11 @@
               {{ else if $index -}}
                 ,</span><span>
               {{ end -}}
-              <em>{{ . }}</em>
+              <em>{{ replace . "_" "\u200B_" }}</em>
               </span>
             {{- end -}}
           {{- else -}}
-            <em>{{ . }}</em>
+            <em>{{ replace . "_" "\u200B_" }}</em>
           {{- end -}}
         </span>
       </p>
