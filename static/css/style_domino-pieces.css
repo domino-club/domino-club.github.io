@@ -230,15 +230,19 @@ a:hover {
     padding-bottom: 0.5rem;
 }
 
-.author {
+.game_credit {
     padding-top: .5rem;
     color: var(--main-author-color);
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
 }
 
-.author em {
+.game_credit em {
     color: var(--secondary-author-color);
+}
+
+.game_credit>span {
+    display: inline-block;
 }
 
 .jam-nav {
