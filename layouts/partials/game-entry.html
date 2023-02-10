@@ -1,6 +1,7 @@
 <article class="game" id="{{ .itch }}">
   <a href="{{ .url }}" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
-    <img loading="lazy" class="game_img" src="{{ .img }}" width="315" height="250" alt="">
+    {{ $image := resources.Get .img }}
+    <img loading="lazy" class="game_img" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="">
   </a>
   <div class="game_text">
     <a href="{{ .url }}" target="_blank" rel="noopener" class="game_link">{{ .title }}</a>
