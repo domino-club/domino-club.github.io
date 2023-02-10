@@ -105,6 +105,12 @@ a:hover {
     height: auto;
 }
 
+#jam_banner {
+    max-height: 10rem;
+    width: auto;
+    height: auto;
+}
+
 .all_jams {
     list-style-type: base-seven-enjoyer;
     list-style-position: inside;
