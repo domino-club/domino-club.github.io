@@ -5,7 +5,7 @@
   {{/* for every jam page, */}}
   {{ range where .Site.RegularPages.ByDate.Reverse "Type" "jams" }}
     <li><h2>{{ .Params.title }}</h2>
-    <a href="{{ .Permalink }}"><img src="{{ index .Params.images 0 }}" alt="collage of game screenshots: {{ .Params.description }}. CLICK TO PLAY GAMES"></a>
+    <a href="{{ .Permalink }}"><img loading="lazy" src="{{ index .Params.images 0 }}" alt="collage of game screenshots: {{ .Params.description }}. CLICK TO PLAY GAMES"></a>
   {{ end }}
 </li>
   </ol>
