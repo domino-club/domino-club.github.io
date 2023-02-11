@@ -24,7 +24,7 @@ function shuffleGames() {
 
     // rescroll to particular game based on url fragment
     if (window.location.hash.length > 0) {
-        const target = document.querySelector(window.location.hash);
+        const target = document.getElementById(window.location.hash.slice(1));
         target?.scrollIntoView();
     }
 }
