@@ -112,7 +112,7 @@ picture > img {
 }
 
 #jam_banner {
-    max-width: 100vw;
+    max-width: 100%;
     max-height: 10rem;
     width: auto;
     height: auto;
