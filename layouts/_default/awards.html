@@ -12,8 +12,8 @@
   <h1>
     {{ .Params.title }} AWARDS
     {{/* force banner resource to load even if unused */}}
-    {{ $image := resources.Get (index .Params.images 0) }}
-    <img src="{{ $image.RelPermalink }}" style="display: none;" alt="" />
+    {{/*  {{ $image := resources.Get (index .Params.images 0) }}  */}}
+    {{/*  <img src="{{ $image.RelPermalink }}" style="display: none;" alt="" />  */}}
   </h1>
   {{ with .Content }}
     {{ . }}
