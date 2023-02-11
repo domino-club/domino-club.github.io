@@ -106,6 +106,7 @@ a:hover {
 }
 
 #jam_banner {
+    max-width: 100%;
     max-height: 10rem;
     width: auto;
     height: auto;
