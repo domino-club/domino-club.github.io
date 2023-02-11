@@ -59,6 +59,7 @@ html {
     scrollbar-color: white rgba(0, 0, 0, 0);
 
     line-height: 1.5;
+    font-variant-ligatures: none;
 }
 
 html::-webkit-scrollbar {
