@@ -1,0 +1,22 @@
+<article class="award" id="{{ .itch }}">
+  {{ $image := resources.Get .img }}
+  {{ $imageWebp := $image.Fit "315x300 webp drawing" }}
+  <picture class="award_img">
+    <source srcset="{{ $imageWebp.RelPermalink }}" type="image/webp" />
+    <source srcset="{{ $image.RelPermalink }}" type="image/png" />
+    <img loading="lazy" src="{{ $image.RelPermalink }}" width="{{ $imageWebp.Width }}" height="{{ $imageWebp.Height }}" alt="{{ .award.image }}">
+  </picture>
+  <div class="award_body">
+    <div class="award_text">
+      <div class="award_name">
+        the {{ .award.judge }} award
+      </div>
+      <p class="game_credit">
+        for {{ .award.merit }}
+      </p>
+    </div>
+    <span aria-role="img">🀱</span>
+    <a class="award_game" href="/jams/{{ .jam }}/#{{ .itch }}">{{ .title }}</a>
+  </div>
+  <div></div>
+</article>
