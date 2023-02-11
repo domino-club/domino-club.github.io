@@ -382,6 +382,7 @@ picture>img {
 
 .award img {
     object-fit: contain;
+    object-position: center bottom;
 }
 
 .award_name {
