@@ -1,11 +1,12 @@
 {{ define "main" }}
+  {{ $awardPage := . }}
   {{ with .GetPage (print "/jams/" .File.TranslationBaseName) }}
 
   <a href="/">
     {{- $image := resources.Get "img/jam-banner.png" -}}
     <img id="jam_banner" loading="eager" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="DOMINO club">
   </a>
-  {{ partial "jam-nav.html" .Page }}
+  {{ partial "section-nav.html" $awardPage }}
 
   {{/* jam page name is used to find images */}}
   {{ $jam := .File.TranslationBaseName }}
@@ -32,7 +33,7 @@
   </section>
   <script src="/js/shuffle.js"></script>
 
-  {{ partial "jam-nav.html" .Page }}
+  {{ partial "section-nav.html" $awardPage }}
 
   {{ end }}
 {{ end }}

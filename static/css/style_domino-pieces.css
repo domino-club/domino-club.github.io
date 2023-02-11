@@ -281,14 +281,14 @@ picture > img {
     display: inline-block;
 }
 
-.jam-nav {
+.section-nav {
     white-space: nowrap;
     padding: 0.5rem 0;
     text-align: center;
 }
 
-.jam-nav>a,
-.jam-nav>span {
+.section-nav>a,
+.section-nav>span {
     display: inline-block;
     text-decoration: none;
     font-style: bold;
@@ -297,26 +297,26 @@ picture > img {
     font-family: 'Palanquin Dark', sans-serif;
 }
 
-.jam-nav>span {
+.section-nav>span {
     cursor: not-allowed;
 }
 
-.jam-nav>a {
+.section-nav>a {
     transition: opacity 80ms ease-out;
 }
 
-.jam-nav>a:hover,
-.jam-nav>a:focus {
+.section-nav>a:hover,
+.section-nav>a:focus {
     opacity: 0.8;
 }
 
-.jam-nav>a[rel]:active {
+.section-nav>a[rel]:active {
     opacity: 0.7;
     animation: blame-nat 200ms linear infinite;
     animation-delay: 500ms;
 }
 
-.jam-nav>a[rel="prev"]:active {
+.section-nav>a[rel="prev"]:active {
     animation-name: blame-nat2;
 }
 
@@ -341,9 +341,8 @@ picture > img {
 }
 
 @media (pointer: coarse) {
-
-    .jam-nav>a,
-    .jam-nav>span {
+    .section-nav>a,
+    .section-nav>span {
         padding: 0.5rem;
     }
 }

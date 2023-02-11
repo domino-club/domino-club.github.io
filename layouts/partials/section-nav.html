@@ -1,12 +1,12 @@
 {{ $thisPage := . }}
 {{ .Scratch.Set "index" 0 }}
-{{ range $idx, $page := (where .Site.RegularPages.ByDate "Type" "jams") }}
+{{ range $idx, $page := (where .Site.RegularPages.ByDate "Type" .Type) }}
   {{ if eq $thisPage . }}
     {{ .Scratch.Set "index" (add $idx 1) }}
   {{ end }}
 {{ end }}
 
-<nav class="jam-nav">
+<nav class="section-nav">
   {{ if .PrevInSection }}
     <a rel="prev" href="{{ .PrevInSection.Permalink }}" title="{{ .PrevInSection.LinkTitle }}" aria-label="Previous: {{ .PrevInSection.LinkTitle }}">{{ partial "domino.html" (slice (add (.Scratch.Get "index") -1) "left") }}</a>
   {{ else }}
