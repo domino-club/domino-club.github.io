@@ -367,7 +367,7 @@ picture>img {
 
 .award {
     width: 315px;
-    height: 550px;
+    height: calc(250px + var(--award-height, 300px));
 
     display: flex;
     flex-direction: column;
@@ -424,7 +424,7 @@ picture>img {
 }
 
 .award_img {
-    height: 300px;
+    height: var(--award-height, 300px);
     box-sizing: content-box;
     object-fit: cover;
     object-position: center;

@@ -19,13 +19,13 @@
   {{ with .Content }}
     {{ . }}
   {{ end }}
-  <section class="jam-awards-listing" data-jam="{{ $jam }}">
+  <section class="jam-awards-listing" data-jam="{{ $jam }}" style="--award-height: {{ $awardPage.Params.awardImageHeight }}px">
     {{/* for every game in this jam, */}}
     {{ range .Params.games }}
       {{/* determine thumbnail path from jam page name and itch page name */}}
       {{ $img := print "img/" $jam "/awards/" .itch ".png" }}
       {{ $url := print "https://dominoclub.itch.io/" .itch }}
-      {{ $game := merge . (dict "img" $img "url" $url "jam" $jam) }}
+      {{ $game := merge . (dict "img" $img "url" $url "jam" $jam "height" $awardPage.Params.awardImageHeight) }}
 
       {{/* pass relevant data to per-game template */}}
       {{- partial "award-entry.html" $game -}}

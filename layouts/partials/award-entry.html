@@ -1,6 +1,6 @@
 <article class="award" id="{{ .itch }}">
   {{ $image := resources.Get .img }}
-  {{ $imageWebp := $image.Fit "315x300 webp drawing" }}
+  {{ $imageWebp := $image.Fit (print "315x" .height " webp drawing") }}
   <picture class="award_img">
     <source srcset="{{ $imageWebp.RelPermalink }}" type="image/webp" />
     <source srcset="{{ $image.RelPermalink }}" type="image/png" />
