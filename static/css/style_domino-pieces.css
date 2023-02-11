@@ -437,7 +437,7 @@ picture>img {
 
 .award {
     background-image:
-        linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.6) 3rem, rgba(0,0,0,0) 350px),
+        linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.6) 3rem, rgba(0,0,0,0) var(--award-height, 300px)),
         radial-gradient(ellipse farthest-corner, hsl(0, 0%, 30%) 0%, hsla(0, 0%, 30%, 0) 100%);
 }
 
