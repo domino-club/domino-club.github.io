@@ -10,7 +10,7 @@
   {{ if .PrevInSection }}
     <a rel="prev" href="{{ .PrevInSection.Permalink }}" title="{{ .PrevInSection.LinkTitle }}" aria-label="Previous: {{ .PrevInSection.LinkTitle }}">{{ partial "domino.html" (slice (add (.Scratch.Get "index") -1) "left") }}</a>
   {{ else }}
-    <span role="img" title="This is the earliest jam" aria-label="This is the earliest jam">{{ partial "domino.html" (slice -1 "left") }}</span>
+    <span role="img" title="There are no earlier pages" aria-label="There are no earlier pages">{{ partial "domino.html" (slice -1 "left") }}</span>
   {{ end }}
 
   <a href="{{ .Site.Home.Permalink }}" title="{{ .Site.Home.LinkTitle }}" aria-label="{{ .Site.Home.LinkTitle }}">{{ partial "domino.html" (slice (.Scratch.Get "index") "up") }}</a>
@@ -18,6 +18,6 @@
   {{ if .NextInSection }}
     <a rel="next" href="{{ .NextInSection.Permalink }}" title="{{ .NextInSection.LinkTitle }}" aria-label="Next: {{ .NextInSection.LinkTitle }}">{{ partial "domino.html" (slice (add (.Scratch.Get "index") 1) "right") }}</a>
   {{ else }}
-    <span role="img" title="This is the most recent jam" aria-label="This is the most recent jam">{{ partial "domino.html" (slice -1 "right") }}</span>
+    <span role="img" title="There are no more pages" aria-label="There are no more pages">{{ partial "domino.html" (slice -1 "right") }}</span>
   {{ end }}
 </nav>
