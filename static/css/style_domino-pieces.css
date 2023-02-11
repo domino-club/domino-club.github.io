@@ -394,7 +394,8 @@ picture>img {
 .award_body {
     width: 100%;
     border-top: 2px solid var(--main-border-color);
-    border-radius: 2rem;
+    border-radius: 2rem 2rem 0 0;
+    background: black;
 
     flex: auto;
     display: flex;
@@ -435,10 +436,7 @@ picture>img {
 
 .award {
     background-image: radial-gradient(ellipse closest-side, hsl(0, 0%, 30%) 0%, hsla(0, 0%, 30%, 0) 100%);
-}
 
-.award_body {
-    background: black;
 }
 
 /* breakpoints */
