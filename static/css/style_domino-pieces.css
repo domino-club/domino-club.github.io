@@ -47,7 +47,8 @@
     --secondary-author-color: #dfdfdf;
     --main-link-color: #b3b3b3;
 
-    --target-color: hsl(0, 85%, 69%);
+    --target-bg-color: hsl(0, 85%, 9%);
+    --target-border-color: hsl(0, 85%, 69%);
 }
 
 html {
@@ -184,7 +185,8 @@ picture>img {
 }
 
 .game:target {
-    --main-border-color: var(--target-color);
+    --main-border-color: var(--target-border-color);
+    background: var(--target-bg-color);
 }
 
 .game {
