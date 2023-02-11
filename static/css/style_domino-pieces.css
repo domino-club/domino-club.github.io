@@ -97,8 +97,7 @@ a:hover {
     color: white;
 }
 
-/* index */
-#banner {
+#home_banner {
     max-width: 100vw;
     max-height: 35vh;
     width: auto;
@@ -106,11 +105,13 @@ a:hover {
 }
 
 #jam_banner {
+    max-width: 100vw;
     max-height: 10rem;
     width: auto;
     height: auto;
 }
 
+/* index */
 .all_jams {
     list-style-type: base-seven-enjoyer;
     list-style-position: inside;
