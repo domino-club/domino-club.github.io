@@ -228,10 +228,14 @@ picture>img {
 
 .game_img {
     height: 250px;
+    width: 100%;
     box-sizing: content-box;
+    transition: filter 80ms ease-out;
+}
+
+.game_img>img {
     object-fit: cover;
     object-position: center;
-    transition: filter 80ms ease-out;
 }
 
 .game_img:hover {

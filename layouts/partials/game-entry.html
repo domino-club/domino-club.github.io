@@ -2,10 +2,10 @@
   <a href="{{ .url }}" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1">
     {{ $image := resources.Get .img }}
     {{ $imageWebp := $image.Fit "315x250 webp drawing" }}
-    <picture class="game_img">
+    <picture class="game_img" style="background-color: {{ index $imageWebp.Colors 0 }};">
       <source srcset="{{ $imageWebp.RelPermalink }}" type="image/webp" />
       <source srcset="{{ $image.RelPermalink }}" type="image/png" />
-      <img loading="lazy" src="{{ $image.RelPermalink }}" width="{{ $imageWebp.Width }}" height="{{ $imageWebp.Height }}" style="background-color: {{ index $imageWebp.Colors 0 }};" alt="">
+      <img loading="lazy" src="{{ $image.RelPermalink }}" width="{{ $imageWebp.Width }}" height="{{ $imageWebp.Height }}" alt="">
     </picture>
   </a>
   <div class="game_text">
