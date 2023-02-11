@@ -431,6 +431,14 @@ picture>img {
     object-position: center;
 }
 
+.award {
+    background-image: linear-gradient(to bottom, transparent, rgba(50,50,50,1) 350px, transparent 350px);
+}
+
+.award_body {
+    background: black;
+}
+
 /* breakpoints */
 @media screen and (max-width: 600px) {
     .all_jams li picture {
