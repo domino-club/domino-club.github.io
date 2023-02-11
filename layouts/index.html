@@ -1,6 +1,6 @@
 {{ define "main" }}
   {{- $image := resources.Get "img/banner.png" -}}
-  <img id="banner" loading="eager" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="DOMINO CLUB">
+  <img id="home_banner" loading="eager" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="DOMINO CLUB">
 
   {{ .Content }}
   <ol class="all_jams" reversed>
