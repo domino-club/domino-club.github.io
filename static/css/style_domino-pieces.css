@@ -434,10 +434,7 @@ picture>img {
 }
 
 .award {
-    background-image: linear-gradient(to bottom, transparent, rgba(50,50,50,1) 350px, transparent 350px);
-}
-[data-jam="domino3"] .award {
-    background-image: linear-gradient(to bottom, transparent, rgba(50,50,50,1) 450px, transparent 450px);
+    background-image: radial-gradient(ellipse closest-side, hsl(0, 0%, 30%) 0%, hsla(0, 0%, 30%, 0) 100%);
 }
 
 .award_body {
