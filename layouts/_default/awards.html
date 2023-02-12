@@ -28,8 +28,7 @@
           {{ else if $index -}}
             ,</span> <span>
           {{ end -}}
-          <a href="{{ .url }}" rel="author"><em>{{ replace .name "_" "\u200B_" }}</em></a>
-          </span>
+          <a href="{{ .url }}" rel="author"><em>{{ replace .name "_" "\u200B_" }}</em></a></span>
         {{- end -}}
       {{- else -}}
         <a href="{{ .url }}" rel="author"><em>{{ replace .name "_" "\u200B_" }}</em></a>
