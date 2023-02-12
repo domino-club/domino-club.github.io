@@ -3,7 +3,7 @@ layout: jam
 title: METAL & FLESH JAM
 date: 2022-09-04T00:00:00Z
 images:
-  - img/domino4/banner.png
+  - img/metal-and-flesh-jam/banner.png
 description: Metal & Flesh Jam. Sep 4 - Oct 9, 2022
 games:
   - itch: greaser

@@ -3,7 +3,7 @@ layout: jam
 title: DOMINO JAM
 date: 2021-07-11T00:00:00Z
 images:
-  - img/domino1/banner.png
+  - img/domino-jam/banner.png
 description: DOMINO JAM. JUL 11 - AUG 7, 2021
 games:
   - itch: candle-cove-by-theodora-gamefeel

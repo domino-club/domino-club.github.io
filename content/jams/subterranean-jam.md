@@ -3,7 +3,7 @@ layout: jam
 title: SUBTERRANEAN JAM
 date: 2022-02-21T00:00:00Z
 images:
-  - img/domino3/banner.png
+  - img/subterranean-jam/banner.png
 description: Subterranean Jam. FEB 21 - MAR 22, 2022
 games:
   - itch: the-green-fog

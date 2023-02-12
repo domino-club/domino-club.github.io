@@ -3,7 +3,7 @@ layout: jam
 title: TRI-JAM
 date: 2021-10-01T00:00:00Z
 images:
-  - img/domino2/banner.png
+  - img/tri-jam/banner.png
 description: TRI JAM. OCT 1-31, 2021
 games:
   - itch: proximity
