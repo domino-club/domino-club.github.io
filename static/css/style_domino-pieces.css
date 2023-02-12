@@ -120,6 +120,24 @@ picture>img {
     height: auto;
 }
 
+.credit {
+    color: var(--main-author-color);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+.credit em {
+    color: var(--secondary-author-color);
+}
+
+article .credit {
+    padding-top: .5rem;
+}
+
+.game .credit > span {
+    display: inline-block;
+}
+
 /* index */
 .all_jams {
     list-style-type: base-seven-enjoyer;
@@ -273,21 +291,6 @@ picture>img {
     padding-bottom: 0.5rem;
 }
 
-.game_credit {
-    padding-top: .5rem;
-    color: var(--main-author-color);
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
-}
-
-.game_credit em {
-    color: var(--secondary-author-color);
-}
-
-.game_credit>span {
-    display: inline-block;
-}
-
 .section-nav {
     white-space: nowrap;
     padding: 0.5rem 0;
@@ -356,6 +359,16 @@ picture>img {
 }
 
 /* awards */
+[data-type="awards"] h1 {
+    margin-bottom: .5rem;
+}
+
+[data-type="awards"] h1 + .credit {
+    margin-top: 0;
+    padding-top: .5rem;
+    border-top: 1px dashed var(--main-border-color);
+}
+
 .jam-awards-listing {
     display: flex;
     flex-direction: row;

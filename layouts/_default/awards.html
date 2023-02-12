@@ -1,39 +1,56 @@
 {{ define "main" }}
-  {{ $awardPage := . }}
-  {{ with .GetPage (print "/jams/" .File.TranslationBaseName) }}
+  {{ $jam := .File.TranslationBaseName }}
+  {{ $jamPage := .GetPage (print "/jams/" $jam) }}
 
   <a href="/">
     {{- $image := resources.Get "img/jam-banner.png" -}}
     <img id="jam_banner" loading="eager" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="DOMINO club">
   </a>
-  {{ partial "section-nav.html" $awardPage }}
 
-  {{/* jam page name is used to find images */}}
-  {{ $jam := .File.TranslationBaseName }}
+  {{ partial "section-nav.html" . }}
+  
   <h1>
-    {{ .Params.title }} AWARDS
-    {{/* force banner resource to load even if unused */}}
-    {{/*  {{ $image := resources.Get (index .Params.images 0) }}  */}}
-    {{/*  <img src="{{ $image.RelPermalink }}" style="display: none;" alt="" />  */}}
+    {{ .Params.title }}
   </h1>
+
   {{ with .Content }}
     {{ . }}
   {{ end }}
-  <section class="jam-awards-listing" data-jam="{{ $jam }}" style="--award-height: {{ $awardPage.Params.awardImageHeight }}px">
-    {{/* for every game in this jam, */}}
-    {{ range .Params.games }}
+
+  {{ with .Params.artists }}
+    <p class="credit">
+      with award art by 
+      {{ if reflect.IsSlice . -}}
+        {{- $num := len . -}}
+        {{- range $index, $author := . -}}
+          {{- if eq $index (add $num -1) }}
+            </span> <span>and 
+          {{ else if $index -}}
+            ,</span> <span>
+          {{ end -}}
+          <a href="{{ .url }}" rel="author"><em>{{ replace .name "_" "\u200B_" }}</em></a>
+          </span>
+        {{- end -}}
+      {{- else -}}
+        <a href="{{ .url }}" rel="author"><em>{{ replace .name "_" "\u200B_" }}</em></a>
+      {{- end -}}
+    </p>
+  {{ end }}
+  
+  <section class="jam-awards-listing" data-jam="{{ $jam }}" style="--award-height: {{ .Params.awardImageHeight }}px">
+    {{/* for every game in the corresponding jam, */}}
+    {{ range $jamPage.Params.games }}
       {{/* determine thumbnail path from jam page name and itch page name */}}
       {{ $img := print "img/" $jam "/awards/" .itch ".png" }}
       {{ $url := print "https://dominoclub.itch.io/" .itch }}
-      {{ $game := merge . (dict "img" $img "url" $url "jam" $jam "height" $awardPage.Params.awardImageHeight) }}
+      {{ $game := merge . (dict "img" $img "url" $url "jam" $jam "height" $.Params.awardImageHeight) }}
 
       {{/* pass relevant data to per-game template */}}
       {{- partial "award-entry.html" $game -}}
     {{ end }}
   </section>
+  
   <script src="/js/shuffle.js"></script>
 
-  {{ partial "section-nav.html" $awardPage }}
-
-  {{ end }}
+  {{ partial "section-nav.html" .}}
 {{ end }}

@@ -1,6 +1,6 @@
 "use strict";
 
-document.addEventListener("DOMContentLoaded", shuffleGames);
+shuffleGames();
 
 function shuffleGames() {
     // don't bother if we can't save the permutation between page visits

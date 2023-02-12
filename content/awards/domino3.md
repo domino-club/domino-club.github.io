@@ -6,7 +6,7 @@ images:
   - img/domino3/banner.png
 description: Subterranean Jam. FEB 21 - MAR 22, 2022
 artists:
-  - name: dino de haas
-    url: https://dinodehaas.nl/
+  name: dino de haas
+  url: https://dinodehaas.nl/
 awardImageHeight: 400
 ---

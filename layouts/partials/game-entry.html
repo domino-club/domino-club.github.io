@@ -12,7 +12,7 @@
     <a href="{{ .url }}" target="_blank" rel="noopener" class="game_link">{{ .title }}</a>
     {{/* if there are credits, */}}
     {{ with .credit }}
-      <p class="game_credit">
+      <p class="credit">
         <span>
           by&nbsp;
           {{- if reflect.IsSlice . -}}
@@ -21,7 +21,7 @@
               {{- if eq $index (add $num -1) }}
                 </span> <span>and 
               {{ else if $index -}}
-                ,</span><span>
+                ,</span> <span>
               {{ end -}}
               <em>{{ replace . "_" "\u200B_" }}</em>
               </span>

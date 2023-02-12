@@ -6,7 +6,7 @@ images:
   - img/domino1/banner.png
 description: DOMINO JAM. JUL 11 - AUG 7, 2021
 artists:
-  - name: Rose
-    url: https://modernmodron.itch.io/
+  name: Rose
+  url: https://modernmodron.itch.io/
 awardImageHeight: 300
 ---
