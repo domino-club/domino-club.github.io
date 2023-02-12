@@ -191,6 +191,16 @@ article .credit {
 }
 
 /* jams */
+[data-type="jams"] h1 {
+    margin-bottom: .5rem;
+}
+
+[data-type="jams"] h1 + .credit {
+    margin-top: 0;
+    padding-top: .5rem;
+    border-top: 1px dashed var(--main-border-color);
+}
+
 .jam-games-listing {
     display: flex;
     flex-direction: row;

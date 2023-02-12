@@ -1,21 +1,31 @@
 {{ define "main" }}
+  {{ $jam := .File.TranslationBaseName }}
+  {{ $awardsPage := .GetPage (print "/awards/" $jam) }}
+
   <a href="/">
     {{- $image := resources.Get "img/jam-banner.png" -}}
     <img id="jam_banner" loading="eager" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="DOMINO CLUB">
   </a>
+
   {{ partial "section-nav.html" .Page }}
 
-  {{/* jam page name is used to find images */}}
-  {{ $jam := .File.TranslationBaseName }}
   <h1>
     {{ .Params.title }}
     {{/* force banner resource to load even if unused */}}
     {{ $image := resources.Get (index .Params.images 0) }}
     <img src="{{ $image.RelPermalink }}" style="display: none;" alt="" />
   </h1>
+
+  {{ if not (eq $awardsPage nil) }}
+    <p class="credit">
+      now an <a href="{{ $awardsPage.RelPermalink }}">award winning</a> collection
+    </p>
+  {{ end }}
+
   {{ with .Content }}
     {{ . }}
   {{ end }}
+
   <section class="jam-games-listing" data-jam="{{ $jam }}">
     {{/* for every game in this jam, */}}
     {{ range .Params.games }}
@@ -29,6 +39,7 @@
       {{- partial "game-entry.html" $game -}}
     {{ end }}
   </section>
+
   <script src="/js/shuffle.js"></script>
 
   {{ partial "section-nav.html" .Page }}
