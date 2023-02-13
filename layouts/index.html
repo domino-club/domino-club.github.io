@@ -3,9 +3,23 @@
   <img id="home_banner" loading="eager" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="DOMINO CLUB">
 
   {{ .Content }}
-  <ol class="all_jams" reversed>
+  <ol class="all_jams" reversed end="0">
   {{/* for every jam page, */}}
   {{ range where .Site.RegularPages.ByDate.Reverse "Type" "jams" }}
+    {{ $image := resources.Get (index .Params.images 0) }}
+    {{ $imageWebp := $image.Resize "960x webp drawing" }}
+    <li>
+      <a href="{{ .Permalink }}">
+        <h2>{{ .Params.title }}</h2>
+        <picture>
+          <source srcset="{{ $imageWebp.RelPermalink }}" type="image/webp" />
+          <source srcset="{{ $image.RelPermalink }}" type="image/png" />
+          <img loading="lazy" src="{{ $image.RelPermalink }}" width="{{ $imageWebp.Width }}" height="{{ $imageWebp.Height }}" style="background-color: {{ index $imageWebp.Colors 0 }};" alt="collage of game screenshots: {{ .Params.description }}. CLICK TO PLAY GAMES">
+        </picture>
+      </a>
+    </li>
+  {{ end }}
+  {{ with .GetPage "standalones" }}
     {{ $image := resources.Get (index .Params.images 0) }}
     {{ $imageWebp := $image.Resize "960x webp drawing" }}
     <li>

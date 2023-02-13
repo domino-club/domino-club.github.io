@@ -1,6 +1,5 @@
 {{ define "main" }}
   {{ $jam := .File.TranslationBaseName }}
-  {{ $awardsPage := .GetPage (print "/awards/" $jam) }}
 
   <a href="/">
     {{- $image := resources.Get "img/jam-banner.png" -}}
@@ -16,9 +15,9 @@
     <img src="{{ $image.RelPermalink }}" style="display: none;" alt="" />
   </h1>
 
-  {{ if not (eq $awardsPage nil) }}
+  {{ with .GetPage (print "/awards/" $jam) }}
     <p class="credit">
-      now an <a href="{{ $awardsPage.RelPermalink }}">award winning</a> collection
+      now an <a href="{{ .RelPermalink }}">award winning</a> collection
     </p>
   {{ end }}
 
