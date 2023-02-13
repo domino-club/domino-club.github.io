@@ -1,25 +1,26 @@
+{{ $thisPage := . }}
+{{ $pageIndex := 0 }}
+  
 {{ if or .PrevInSection .NextInSection }}
-  {{ $thisPage := . }}
-  {{ .Scratch.Set "index" 0 }}
   {{ range $idx, $page := (where .Site.RegularPages.ByDate "Type" .Type) }}
     {{ if eq $thisPage . }}
-      {{ .Scratch.Set "index" (add $idx 1) }}
+      {{ $pageIndex = (add $idx 1) }}
     {{ end }}
   {{ end }}
-
-  <nav class="section-nav">
-    {{ if .PrevInSection }}
-      <a rel="prev" href="{{ .PrevInSection.Permalink }}" title="{{ .PrevInSection.LinkTitle }}" aria-label="Previous: {{ .PrevInSection.LinkTitle }}">{{ partial "domino.html" (slice (add (.Scratch.Get "index") -1) "left") }}</a>
-    {{ else }}
-      <span role="img" title="There are no earlier pages" aria-label="There are no earlier pages">{{ partial "domino.html" (slice -1 "left") }}</span>
-    {{ end }}
-
-    <a href="{{ .Site.Home.Permalink }}" title="{{ .Site.Home.LinkTitle }}" aria-label="{{ .Site.Home.LinkTitle }}">{{ partial "domino.html" (slice (.Scratch.Get "index") "up") }}</a>
-
-    {{ if .NextInSection }}
-      <a rel="next" href="{{ .NextInSection.Permalink }}" title="{{ .NextInSection.LinkTitle }}" aria-label="Next: {{ .NextInSection.LinkTitle }}">{{ partial "domino.html" (slice (add (.Scratch.Get "index") 1) "right") }}</a>
-    {{ else }}
-      <span role="img" title="There are no more pages" aria-label="There are no more pages">{{ partial "domino.html" (slice -1 "right") }}</span>
-    {{ end }}
-  </nav>
 {{ end }}
+
+<nav class="section-nav">
+  {{ if .PrevInSection }}
+    <a rel="prev" href="{{ .PrevInSection.Permalink }}" title="{{ .PrevInSection.LinkTitle }}" aria-label="Previous: {{ .PrevInSection.LinkTitle }}">{{ partial "domino.html" (slice (add $pageIndex -1) "left") }}</a>
+  {{ else }}
+    <span role="img" title="There are no earlier pages" aria-label="There are no earlier pages">{{ partial "domino.html" (slice -1 "left") }}</span>
+  {{ end }}
+
+  <a href="{{ .Site.Home.Permalink }}" title="{{ .Site.Home.LinkTitle }}" aria-label="{{ .Site.Home.LinkTitle }}">{{ partial "domino.html" (slice $pageIndex "up") }}</a>
+
+  {{ if .NextInSection }}
+    <a rel="next" href="{{ .NextInSection.Permalink }}" title="{{ .NextInSection.LinkTitle }}" aria-label="Next: {{ .NextInSection.LinkTitle }}">{{ partial "domino.html" (slice (add $pageIndex 1) "right") }}</a>
+  {{ else }}
+    <span role="img" title="There are no more pages" aria-label="There are no more pages">{{ partial "domino.html" (slice -1 "right") }}</span>
+  {{ end }}
+</nav>
