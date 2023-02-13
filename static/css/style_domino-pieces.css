@@ -108,6 +108,9 @@ picture>img {
 }
 
 #home_banner {
+    margin: 0;
+}
+#home_banner > img {
     max-width: 100vw;
     max-height: 35vh;
     width: auto;
