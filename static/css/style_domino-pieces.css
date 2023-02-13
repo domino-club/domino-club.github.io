@@ -157,7 +157,7 @@ article .credit {
 }
 
 .all_jams li {
-    width: 100%;
+    min-width: 100%;
 }
 
 .all_jams li>a {
@@ -182,9 +182,12 @@ article .credit {
     display: block;
     margin-top: 0.5rem;
     box-shadow: 8px 0 var(--main-bg-color);
-    border: 2px solid var(--main-border-color);
+    outline: 2px solid var(--main-border-color);
     border-radius: 2rem;
     overflow: hidden;
+
+    width: 960px;
+    max-width: calc(100vw - 2rem);
 }
 
 .all_jams li picture>img {
