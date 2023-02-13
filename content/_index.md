@@ -1,7 +1,7 @@
 ---
 title: DOMINO CLUB
 images:
-  - img/banner.png
+  - img/home-banner-nobg.webp
 description: DOMINO CLUB is a loose collective of digital artists coming together to participate in anonymous game jams
 ---
 
