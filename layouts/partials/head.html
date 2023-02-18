@@ -1,6 +1,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{ if .Params.private }}
+      <meta name="robots" content="noindex" />
+    {{- end -}}
 
     <link rel="preload" as="font" href="/fonts/SpaceMono-Regular.woff2" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" as="font" href="/fonts/PalanquinDark-Regular.woff2" type="font/woff2" crossorigin="anonymous">
