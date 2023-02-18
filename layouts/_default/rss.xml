@@ -34,6 +34,11 @@
       {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
       <guid>{{ .Permalink }}</guid>
       <description>{{ .Summary | html }}</description>
+
+      {{- $image := resources.Get (index .Params.images 0) -}}
+      {{- with $image -}}
+        <enclosure url="{{ .Permalink }}" length="{{ len .Content }}" type="{{ .MediaType }}"/>
+      {{- end -}}
     </item>
     {{ end }}
   </channel>
