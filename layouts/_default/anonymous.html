@@ -4,9 +4,6 @@
     --light: #f2f2f2;
     --dark: #0c0c0c;
     --emph: #44f9f6;
-    
-    background-color: var(--dark);
-    color: var(--light);
   }
   
   label[for="message"] {
@@ -23,14 +20,16 @@
   
   main {
     width: 100%;
-    max-width: 600px;
-    margin: auto;
-    
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    align-items: center;
   }
   
+  form {
+    width: 600px;
+  }
+
   textarea {
     flex: 1;
     min-height: 5rem;
@@ -73,31 +72,29 @@
 </style>
 <main>
   <h1 class="title">ANONYMOUS MESSAGING</h1>
-  <div class="color-form">
-    <form class="message-form" method="post" action="https://tinybird.zone/anonymous">
-      <label for="token">PASSWORD</label>
-      <input type="password" name="token">
-      <label for="message">
-        MESSAGE
-        <select id="template-select">
-          <option>MESSAGE TEMPLATE</option>
-          <option value="I THINK [GAME] HAS BUG [DETAILS]">BUG FOUND</option>
-          <option value="I WILL FIX [GAME] BUG [DETAILS]">BUG FIXING</option>
-          <option value="I FIXED [GAME] BUG [DETAILS]">BUG FIXED</option>
-          <option value="I WILL BE SUBMITTING LATE (FAO ORGANISERS)">LATE SUBMISSION</option>
-          <option value="[GAME] HAS JUST RELEASED LATE ([URL])">LATE RELEASE</option>
-          <option value="I NEED HELP WITH [FIELD] (PLEASE OFFER PUBLICLY IN #domino-club)">HELP REQUEST</option>
-          <option value="I AM LOOKING FOR A COLLABORATOR TO [TASK] (PLEASE OFFER PUBLICLY IN #domino-club)">COLLAB REQUEST</option>
-          <option value="I WOULD LIKE A SERIOUS DISCUSSION ON [TOPIC] (CANDLE WILL ORGANISE)">DISCUSSION REQUEST</option>
-          <option value="[GAME] AUTHOR ASKS THAT YOU PLEASE BE MORE [FORGIVING/SERIOUS/RESPECTFUL/ETC] ABOUT [ASPECT]">CARE REQUEST</option>
-        </select>
-      </label>
-      <textarea id="message" name="message" required="required"></textarea>
-      <button type="submit">POST TO DISCORD</button>
-    </form>
-  </div>
+  <form class="message-form" method="post" action="https://tinybird.zone/anonymous">
+    <label for="token">PASSWORD</label>
+    <input type="password" name="token">
+    <label for="message">
+      MESSAGE
+      <select id="template-select">
+        <option>MESSAGE TEMPLATE</option>
+        <option value="I THINK [GAME] HAS BUG [DETAILS]">BUG FOUND</option>
+        <option value="I WILL FIX [GAME] BUG [DETAILS]">BUG FIXING</option>
+        <option value="I FIXED [GAME] BUG [DETAILS]">BUG FIXED</option>
+        <option value="I WILL BE SUBMITTING LATE (FAO ORGANISERS)">LATE SUBMISSION</option>
+        <option value="[GAME] HAS JUST RELEASED LATE ([URL])">LATE RELEASE</option>
+        <option value="I NEED HELP WITH [FIELD] (PLEASE OFFER PUBLICLY IN #domino-club)">HELP REQUEST</option>
+        <option value="I AM LOOKING FOR A COLLABORATOR TO [TASK] (PLEASE OFFER PUBLICLY IN #domino-club)">COLLAB REQUEST</option>
+        <option value="I WOULD LIKE A SERIOUS DISCUSSION ON [TOPIC] (CANDLE WILL ORGANISE)">DISCUSSION REQUEST</option>
+        <option value="[GAME] AUTHOR ASKS THAT YOU PLEASE BE MORE [FORGIVING/SERIOUS/RESPECTFUL/ETC] ABOUT [ASPECT]">CARE REQUEST</option>
+      </select>
+    </label>
+    <textarea id="message" name="message" required="required"></textarea>
+    <button type="submit">POST TO DISCORD</button>
+  </form>
 
-  <div class="instructions">
+  <section class="instructions">
     <h2>
       READ BEFORE USING THIS
     </h2>
@@ -111,7 +108,7 @@
     <p>
       You can non-anonymously contact <strong>candle</strong> or <strong>Emma</strong> privately if you feel your sensitive issue can't be raised using this system.
     </p>
-  </div>
+  </section>
   
 </main>
 <script>
