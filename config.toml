@@ -2,5 +2,6 @@ baseURL = 'https://domino.gallery'
 languageCode = 'en-us'
 title = 'DOMINO CLUB'
 enableRobotsTXT = true
+disableKinds = ["taxonomyTerm"]
 [imaging]
 	quality = 100
