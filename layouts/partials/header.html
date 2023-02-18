@@ -1,0 +1,13 @@
+{{ if .IsHome }}
+  {{- $image := resources.Get "img/home-banner-nobg.webp" -}}
+  <h1 id="home_banner">
+    <img loading="eager" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="DOMINO CLUB">
+  </h1>
+{{ else }}
+  <a href="/">
+    {{- $image := resources.Get "img/jam-banner.png" -}}
+    <img id="jam_banner" loading="eager" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="DOMINO club">
+  </a>
+
+  {{ partial "section-nav.html" . }}
+{{ end }}

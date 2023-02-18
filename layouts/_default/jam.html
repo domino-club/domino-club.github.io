@@ -1,13 +1,6 @@
 {{ define "main" }}
   {{ $jam := .File.TranslationBaseName }}
 
-  <a href="/">
-    {{- $image := resources.Get "img/jam-banner.png" -}}
-    <img id="jam_banner" loading="eager" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="DOMINO CLUB">
-  </a>
-
-  {{ partial "section-nav.html" .Page }}
-
   <h1>
     {{ .Params.title }}
     {{/* force banner resource to load even if unused */}}

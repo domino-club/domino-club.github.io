@@ -1,13 +1,6 @@
 {{ define "main" }}
   {{ $jam := .File.TranslationBaseName }}
   {{ $jamPage := .GetPage (print "/jams/" $jam) }}
-
-  <a href="/">
-    {{- $image := resources.Get "img/jam-banner.png" -}}
-    <img id="jam_banner" loading="eager" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="DOMINO club">
-  </a>
-
-  {{ partial "section-nav.html" . }}
   
   <h1>
     {{ .Params.title }}

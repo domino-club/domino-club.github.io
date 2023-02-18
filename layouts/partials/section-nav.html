@@ -1,7 +1,15 @@
 {{ $thisPage := . }}
 {{ $pageIndex := 0 }}
-  
-{{ if or .PrevInSection .NextInSection }}
+
+{{ $prev := .PrevInSection }}
+{{ $next := .NextInSection }}
+
+{{ if eq .CurrentSection .Site.Home }}
+  {{ $prev = false }}
+  {{ $next = false }}
+{{ end }}
+
+{{ if or $prev $next }}
   {{ range $idx, $page := (where .Site.RegularPages.ByDate "Type" .Type) }}
     {{ if eq $thisPage . }}
       {{ $pageIndex = (add $idx 1) }}
@@ -10,7 +18,7 @@
 {{ end }}
 
 <nav class="section-nav">
-  {{ if .PrevInSection }}
+  {{ if $prev }}
     <a rel="prev" href="{{ .PrevInSection.Permalink }}" title="{{ .PrevInSection.LinkTitle }}" aria-label="Previous: {{ .PrevInSection.LinkTitle }}">{{ partial "domino.html" (slice (add $pageIndex -1) "left") }}</a>
   {{ else }}
     <span role="img" title="There are no earlier pages" aria-label="There are no earlier pages">{{ partial "domino.html" (slice -1 "left") }}</span>
@@ -18,7 +26,7 @@
 
   <a href="{{ .Site.Home.Permalink }}" title="{{ .Site.Home.LinkTitle }}" aria-label="{{ .Site.Home.LinkTitle }}">{{ partial "domino.html" (slice $pageIndex "up") }}</a>
 
-  {{ if .NextInSection }}
+  {{ if $next }}
     <a rel="next" href="{{ .NextInSection.Permalink }}" title="{{ .NextInSection.LinkTitle }}" aria-label="Next: {{ .NextInSection.LinkTitle }}">{{ partial "domino.html" (slice (add $pageIndex 1) "right") }}</a>
   {{ else }}
     <span role="img" title="There are no more pages" aria-label="There are no more pages">{{ partial "domino.html" (slice -1 "right") }}</span>
