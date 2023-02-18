@@ -5,7 +5,7 @@ images:
 title: ANONYMOUS MESSAGING
 private: true
 
-endpoint: https://tinybird.zone/anonymous
+endpoint: https://api.domino.gallery/anonymous
 
 templates:
   - name: BUG FOUND
