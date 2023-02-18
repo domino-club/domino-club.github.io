@@ -1,10 +1,10 @@
 ---
 layout: awards
 title: SUBTERRANEAN JAM AWARDS
-date: 2022-02-21T00:00:00Z
+date: 2022-04-03T00:00:00Z
 images:
   - img/subterranean-jam/banner.png
-description: Subterranean Jam. FEB 21 - MAR 22, 2022
+description: UBTERRANEAN JAM AWARDS. APR 3, 2022
 artists:
   name: dino de haas
   url: https://dinodehaas.nl/

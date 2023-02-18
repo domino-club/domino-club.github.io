@@ -1,10 +1,10 @@
 ---
 layout: awards
 title: METAL & FLESH JAM AWARDS
-date: 2022-09-04T00:00:00Z
+date: 2022-10-23T00:00:00Z
 images:
   - img/metal-and-flesh-jam/banner.png
-description: Metal & Flesh Jam. Sep 4 - Oct 9, 2022
+description: METAL & FLESH JAM AWARDS. OCT 23, 2022
 artists:
   - name: jazz mickle
     url: http://www.jmickle.com/
