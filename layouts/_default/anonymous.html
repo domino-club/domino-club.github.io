@@ -11,7 +11,7 @@
     justify-content: space-between;
   }
   
-  body, main, form {
+  main, form {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -20,9 +20,6 @@
   
   main {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
     align-items: center;
   }
   
@@ -35,8 +32,7 @@
     min-height: 5rem;
   }
   
-  button,
-  input, textarea {
+  button, input, textarea {
     background: inherit;
     color: inherit;
     
@@ -67,27 +63,21 @@
   
   h2, label {
     margin: 0;
-    color: #44f9f6;
+    color: var(--emph);
   }  
 </style>
 <main>
   <h1 class="title">ANONYMOUS MESSAGING</h1>
-  <form class="message-form" method="post" action="https://tinybird.zone/anonymous">
+  <form class="message-form" method="post" action="{{ .Params.endpoint }}">
     <label for="token">PASSWORD</label>
     <input type="password" name="token">
     <label for="message">
       MESSAGE
       <select id="template-select">
         <option>MESSAGE TEMPLATE</option>
-        <option value="I THINK [GAME] HAS BUG [DETAILS]">BUG FOUND</option>
-        <option value="I WILL FIX [GAME] BUG [DETAILS]">BUG FIXING</option>
-        <option value="I FIXED [GAME] BUG [DETAILS]">BUG FIXED</option>
-        <option value="I WILL BE SUBMITTING LATE (FAO ORGANISERS)">LATE SUBMISSION</option>
-        <option value="[GAME] HAS JUST RELEASED LATE ([URL])">LATE RELEASE</option>
-        <option value="I NEED HELP WITH [FIELD] (PLEASE OFFER PUBLICLY IN #domino-club)">HELP REQUEST</option>
-        <option value="I AM LOOKING FOR A COLLABORATOR TO [TASK] (PLEASE OFFER PUBLICLY IN #domino-club)">COLLAB REQUEST</option>
-        <option value="I WOULD LIKE A SERIOUS DISCUSSION ON [TOPIC] (CANDLE WILL ORGANISE)">DISCUSSION REQUEST</option>
-        <option value="[GAME] AUTHOR ASKS THAT YOU PLEASE BE MORE [FORGIVING/SERIOUS/RESPECTFUL/ETC] ABOUT [ASPECT]">CARE REQUEST</option>
+        {{ range .Params.templates }}
+          <option value="{{ .text }}">{{ .name }}</option>
+        {{ end }}
       </select>
     </label>
     <textarea id="message" name="message" required="required"></textarea>
@@ -95,19 +85,7 @@
   </form>
 
   <section class="instructions">
-    <h2>
-      READ BEFORE USING THIS
-    </h2>
-    <p>
-      This is <strong>not</strong> for jokes, misdirection, or any other ironic usage. If use this system in 
-      bad faith, you will make your friends uncomfortable.
-    </p>
-    <p>
-      This will post a message to the <strong>#domino-anonymous</strong> channel on the domino club discord. Tagging users and channels doesn't work. Custom emoji won't show.
-    </p>
-    <p>
-      You can non-anonymously contact <strong>candle</strong> or <strong>Emma</strong> privately if you feel your sensitive issue can't be raised using this system.
-    </p>
+    {{ .Content }}
   </section>
   
 </main>
