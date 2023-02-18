@@ -2,7 +2,7 @@
 <style>
   :root {
     --light: #f2f2f2;
-    --dark: #0c0c0c;
+    --dark: black;
     --emph: #44f9f6;
   }
   
@@ -51,8 +51,14 @@
     align-self: center;
     cursor: pointer;
   }
+
+  button:disabled {
+    background: transparent;
+    border: dotted white 1px;
+    color: white;
+  }
   
-  button:active {
+  button:active:not(:disabled) {
     filter: invert();
   }
   
@@ -65,10 +71,14 @@
     margin: 0;
     color: var(--emph);
   }  
+
+  form > p {
+    text-align: center;
+  }
 </style>
 <main>
   <h1 class="title">ANONYMOUS MESSAGING</h1>
-  <form class="message-form" method="post" action="{{ .Params.endpoint }}">
+  <form class="message-form" method="post" action="{{ .Params.endpoint }}" target="_blank">
     <label for="token">PASSWORD</label>
     <input type="password" name="token">
     <label for="message">
@@ -93,5 +103,25 @@
   const templateSelect = document.getElementById("template-select");
   const messageInput = document.getElementById("message");
   templateSelect.addEventListener("input", () => messageInput.value = templateSelect.value);
+
+  const form = document.querySelector("form");
+  const submit = document.querySelector(`button[type="submit"]`);
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    messageInput.disabled = true;
+    submit.disabled = true;
+
+    const response = await fetch(form.action, {
+      method: 'post',
+      body: new URLSearchParams(new FormData(form)),
+    });
+
+    const message = document.createElement("p");
+    message.textContent = response.ok ? "SUCCESS" : "FAILURE";
+    submit.insertAdjacentElement("afterend", message);
+
+    if (!response.ok) console.log((await response.json()).error.message);
+  });
 </script>
 {{ end }}
