@@ -77,14 +77,14 @@
     text-align: center;
   }
 </style>
-<form class="message-form" method="post" action="{{ .Page.Params.endpoint }}" target="_blank">
+<form class="message-form" method="post" action="{{ $.Site.Data.anonymous_messaging.endpoint }}" target="_blank">
   <label for="token">PASSWORD</label>
   <input type="password" name="token">
   <label for="message">
     MESSAGE
     <select id="template-select">
       <option>MESSAGE TEMPLATE</option>
-      {{ range .Page.Params.templates }}
+      {{ range $.Site.Data.anonymous_messaging.templates }}
         <option value="{{ .text }}">{{ .name }}</option>
       {{ end }}
     </select>

@@ -3,36 +3,6 @@ images:
   - img/jam-banner.png
 title: ANONYMOUS MESSAGING
 private: true
-
-endpoint: https://api.domino.gallery/anonymous
-
-templates:
-  - name: BUG FOUND
-    text: "I THINK [GAME] HAS BUG [DETAILS]"
-  
-  - name: BUG FIXING
-    text: "I WILL FIX [GAME] BUG [DETAILS]"
-
-  - name: BUG FIXED
-    text: "I FIXED [GAME] BUG [DETAILS]"
-  
-  - name: LATE SUBMISSION
-    text: "I WILL BE SUBMITTING LATE (FAO ORGANISERS)"
-  
-  - name: LATE RELEASE
-    text: "[GAME] HAS JUST RELEASED LATE ([URL])"
-  
-  - name: HELP REQUEST
-    text: "I NEED HELP WITH [FIELD] (PLEASE OFFER PUBLICLY IN #domino-club)"
-  
-  - name: COLLAB REQUEST
-    text: "I AM LOOKING FOR A COLLABORATOR TO [TASK] (PLEASE OFFER PUBLICLY IN #domino-club)"
-  
-  - name: DISCUSSION REQUEST
-    text: "I WOULD LIKE A SERIOUS DISCUSSION ON [TOPIC] (CANDLE WILL ORGANISE)"
-  
-  - name: CARE REQUEST
-    text: "[GAME] AUTHOR ASKS THAT YOU PLEASE BE MORE [FORGIVING/SERIOUS/RESPECTFUL/ETC] ABOUT [ASPECT]"
 ---
 # ANONYMOUS MESSAGING
 {{< anonymous-messaging >}}
