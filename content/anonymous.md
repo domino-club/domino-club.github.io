@@ -1,5 +1,4 @@
 ---
-layout: anonymous
 images:
   - img/jam-banner.png
 title: ANONYMOUS MESSAGING
@@ -35,6 +34,9 @@ templates:
   - name: CARE REQUEST
     text: "[GAME] AUTHOR ASKS THAT YOU PLEASE BE MORE [FORGIVING/SERIOUS/RESPECTFUL/ETC] ABOUT [ASPECT]"
 ---
+# ANONYMOUS MESSAGING
+{{< anonymous-messaging >}}
+
 ## READ BEFORE USING THIS
 This is **not** for jokes, misdirection, or any other ironic usage. If use this system in bad faith, you will make your friends uncomfortable.
 

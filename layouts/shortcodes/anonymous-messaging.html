@@ -1,4 +1,3 @@
-{{ define "main" }}
 <style>
   :root {
     --light: #f2f2f2;
@@ -26,6 +25,7 @@
   form {
     width: 100%;
     max-width: 600px;
+    margin-bottom: 2rem;
   }
 
   textarea {
@@ -77,29 +77,21 @@
     text-align: center;
   }
 </style>
-<main>
-  <h1 class="title">ANONYMOUS MESSAGING</h1>
-  <form class="message-form" method="post" action="{{ .Params.endpoint }}" target="_blank">
-    <label for="token">PASSWORD</label>
-    <input type="password" name="token">
-    <label for="message">
-      MESSAGE
-      <select id="template-select">
-        <option>MESSAGE TEMPLATE</option>
-        {{ range .Params.templates }}
-          <option value="{{ .text }}">{{ .name }}</option>
-        {{ end }}
-      </select>
-    </label>
-    <textarea id="message" name="message" required="required"></textarea>
-    <button type="submit">POST TO DISCORD</button>
-  </form>
-
-  <section class="instructions">
-    {{ .Content }}
-  </section>
-  
-</main>
+<form class="message-form" method="post" action="{{ .Page.Params.endpoint }}" target="_blank">
+  <label for="token">PASSWORD</label>
+  <input type="password" name="token">
+  <label for="message">
+    MESSAGE
+    <select id="template-select">
+      <option>MESSAGE TEMPLATE</option>
+      {{ range .Page.Params.templates }}
+        <option value="{{ .text }}">{{ .name }}</option>
+      {{ end }}
+    </select>
+  </label>
+  <textarea id="message" name="message" required="required"></textarea>
+  <button type="submit">POST TO DISCORD</button>
+</form>
 <script>
   const templateSelect = document.getElementById("template-select");
   const messageInput = document.getElementById("message");
@@ -125,4 +117,3 @@
     if (!response.ok) console.log((await response.json()).error.message);
   });
 </script>
-{{ end }}
