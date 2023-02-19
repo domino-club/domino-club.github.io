@@ -12,3 +12,6 @@ to add a jam you need the jam page (which includes all game metadata), the jam b
 
 ## adding user pages
 create a folder `static/~pseduonym` and add files there. everything in `static` is copied to the website verbatim
+
+## misc
+ * anonymous messaging template messages are stored in `data/anonymous_messaging.yaml`
