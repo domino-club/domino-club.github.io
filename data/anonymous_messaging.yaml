@@ -1,5 +1,14 @@
 endpoint: https://api.domino.gallery/anonymous
 templates:
+  - name: JAM SUBMISSION
+    text: "JAM SUBMISSION: [TITLE] BY [CREDIT] AT [ITCH]"
+  
+  - name: NEW STANDALONE
+    text: "NEW STANDALONE: [TITLE] BY [CREDIT] AT [ITCH]"
+
+  - name: LATE SUBMISSION
+    text: "I WILL BE SUBMITTING LATE (FAO ORGANISERS)"
+
   - name: BUG FOUND
     text: "I THINK [GAME] HAS BUG [DETAILS]"
   
@@ -8,12 +17,6 @@ templates:
 
   - name: BUG FIXED
     text: "I FIXED [GAME] BUG [DETAILS]"
-  
-  - name: LATE SUBMISSION
-    text: "I WILL BE SUBMITTING LATE (FAO ORGANISERS)"
-  
-  - name: LATE RELEASE
-    text: "[GAME] HAS JUST RELEASED LATE ([URL])"
   
   - name: HELP REQUEST
     text: "I NEED HELP WITH [FIELD] (PLEASE OFFER PUBLICLY IN #domino-club)"
