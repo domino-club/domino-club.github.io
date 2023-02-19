@@ -78,18 +78,16 @@
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
+    const body = new URLSearchParams(new FormData(form));
     message.disabled = true;
     submit.disabled = true;
 
-    const response = await fetch(form.action, {
-      method: 'post',
-      body: new URLSearchParams(new FormData(form)),
-    });
+    const response = await fetch(form.action, { method: 'post', body });
 
     const outcome = document.createElement("p");
     outcome.textContent = response.ok ? "SUCCESS" : "FAILURE";
     submit.insertAdjacentElement("afterend", outcome);
 
-    if (!response.ok) console.log((await response.json()).error.message);
+    if (!response.ok) console.log((await response.json()).message);
   });
 </script>
