@@ -43,7 +43,7 @@ games:
     title: a Thesis for Truth
     credit:
       - Dr. One Ironautics 
-      - Prof. Two
+      - Prof. Two Ironautics
   
   - itch: joey-wamones-highly-catered-delicatessen
     title: Joey Wamone's Highly Catered Delicatessen
