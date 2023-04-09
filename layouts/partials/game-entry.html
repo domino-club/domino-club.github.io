@@ -9,7 +9,7 @@
     </picture>
   </a>
   <div class="game_text">
-    <a href="{{ .url }}" target="_blank" rel="noopener" class="game_link">{{ .title }}</a>
+    <a href="{{ .url }}" target="_blank" rel="noopener" class="game_link">{{ replaceRE `([_.~-])` "\u200B$1" .title }} </a>
     {{/* if there are credits, */}}
     {{ with .credit }}
       <p class="credit">
@@ -23,11 +23,11 @@
               {{ else if $index -}}
                 ,</span> <span>
               {{ end -}}
-              <em>{{ replace . "_" "\u200B_" }}</em>
+              <em>{{ replaceRE `([_.~-])` "\u200B$1" . }}</em>
               </span>
             {{- end -}}
           {{- else -}}
-            <em>{{ replace . "_" "\u200B_" }}</em>
+            <em>{{ replaceRE `([_.~-])` "\u200B$1" . }}</em>
           {{- end -}}
         </span>
       </p>
