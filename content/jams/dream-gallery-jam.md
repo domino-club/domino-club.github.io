@@ -76,4 +76,16 @@ games:
   - itch: traumakt4
     title: TRAUMAKT~4.SEXE
     credit: Protag Nude Incorporated
+  
+  - itch: make-your-ancestors-smile-upon-you
+    title: make your ancestors smile upon you ૮₍ ˶>⤙<˶ ₎ა
+    credit: the spirit of a broken fossil filled with determination ( •̯́ ^ •̯̀)
+  
+  - itch: sleep-paralysis-demon
+    title: sleep paralysis demon
+    credit: Henry Fuseli
+
+  - itch: an-assembly
+    title: An Assembly of Toppling Figures - Spring 2023 Senior Art Exhibition
+    credit: Jacobi Ease
 ---
