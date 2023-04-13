@@ -88,4 +88,8 @@ games:
   - itch: an-assembly
     title: An Assembly of Toppling Figures - Spring 2023 Senior Art Exhibition
     credit: Jacobi Ease
+
+  - itch: peepers
+    title: peepers
+    credit: the developer
 ---
