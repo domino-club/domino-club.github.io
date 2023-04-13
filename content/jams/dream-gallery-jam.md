@@ -92,4 +92,10 @@ games:
   - itch: peepers
     title: peepers
     credit: the developer
+
+  - itch: dream-tube
+    title: Dream Tube
+    credit:
+      - Sorrowful Maiden
+      - Australian Dave
 ---
