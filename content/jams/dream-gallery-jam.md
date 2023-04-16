@@ -37,7 +37,7 @@ games:
     award:
       judge: David Mirrors
       merit: repressed memories of dark murder
-      image: 
+      image: something mirrorsy.. closeup of strangling hands or hand with knife or idk?
     
   - itch: dreamwater
     title: Dreamwater
@@ -79,7 +79,7 @@ games:
     award:
       judge: Frank Donnie Darko
       merit: dreams haunted by a bunny
-      image: love <--> fear??
+      image: love <--> fear? fnaf bunny (https://freddy-fazbears-pizza.fandom.com/wiki/Vanny)?
   
   - itch: joey-wamones-highly-catered-delicatessen
     title: Joey Wamone's Highly Catered Delicatessen
@@ -175,5 +175,15 @@ games:
     award:
       judge: Syd March
       merit: intimate fluids sold at market value
-      image: 
+      image: photo slide idk?
+  
+  - itch: dream-tube
+    title: Dream Tube
+    credit:
+      - Sorrowful Maiden
+      - Australian Dave
+    award:
+      judge: Himemiya Anthy 
+      merit: hitting the bricks. roll credits, cue banger
+      image: da share zone?
 ---
