@@ -1,5 +1,4 @@
 ---
-# draft: true
 layout: jam
 title: DREAM GALLERY JAM
 date: 2023-01-01T00:00:00Z
@@ -13,7 +12,7 @@ games:
     award:
       judge: Osamu Sato
       merit: a trip into a colorful dream
-      image: lsd dream simulator inspired visuals?
+      image: amulet with image of black figure in trenchcoat and hat
 
   - itch: im-doing-better-now
     title: im doing better now
@@ -21,7 +20,7 @@ games:
     award:
       judge: Anatoly Dyatlov
       merit: taking in your stride a situation that's not great but not terrible
-      image: yellow/black radiation symbol and/or dosimeter?
+      image: amulet with image of radioactive artifact
     
   - itch: encounter-at-roofpoint
     title: Encounter At Roofpoint
@@ -29,7 +28,7 @@ games:
     award:
       judge: Q
       merit: a supreme being and their delightful diminutive companion
-      image: q and picard in bed? 
+      image: amulet with image of q and picard in bed together
     
   - itch: dream-immersion-therapy
     title: DREAM IMMERSION THERAPY
@@ -37,7 +36,7 @@ games:
     award:
       judge: David Mirrors
       merit: repressed memories of dark murder
-      image: something mirrorsy.. closeup of strangling hands or hand with knife or idk?
+      image: amulet with image of a closeup of a human eye
     
   - itch: dreamwater
     title: Dreamwater
@@ -45,7 +44,7 @@ games:
     award:
       judge: Samuel Taylor Coleridge
       merit: water water everywhere, but none you'd dare to drink
-      image: jars of piss and cum and whatever?
+      image: amulet with image of a jar of piss
     
   - itch: choir-medals
     title: Choir Medals
@@ -53,7 +52,7 @@ games:
     award:
       judge: Sister Wendy Beckett
       merit: the intersection of church and art, and simply being as you are
-      image: piss christ? her hands gesturing?
+      image: amulet with image of a hand gesturing with the index finger
     
   - itch: behind-the-red-dais
     title: Behind The Red Dais
@@ -61,7 +60,7 @@ games:
     award:
       judge: Sumio Mondo
       merit: wandering the grounds of a dream filled with dopplegangers
-      image: the suitcase that gives you that ds feeling??
+      image: amulet with image of an asian girl
     
   - itch: undone
     title: undone
@@ -69,7 +68,7 @@ games:
     award:
       judge: Reika Otori
       merit: advances in paranormal neuroscience
-      image: brain/neuron imagery idk?
+      image: amulet with image of a web of neurons
     
   - itch: a-thesis-for-truth
     title: a Thesis for Truth
@@ -79,7 +78,7 @@ games:
     award:
       judge: Frank Donnie Darko
       merit: dreams haunted by a bunny
-      image: love <--> fear? fnaf bunny (https://freddy-fazbears-pizza.fandom.com/wiki/Vanny)?
+      image: amulet with image of a bunny sleeping in the dirt
   
   - itch: joey-wamones-highly-catered-delicatessen
     title: Joey Wamone's Highly Catered Delicatessen
@@ -87,7 +86,7 @@ games:
     award:
       judge: Kondwani Sichinga
       merit: the longest inhale ever
-      image: beatboxing joker reference idk?
+      image: amulet with image of 80fitz doing beatboxing joker
   
   - itch: pepys
     title: "SAMUEL PEPYS: Dream Diarist"
@@ -95,15 +94,15 @@ games:
     award:
       judge: Stan Lee
       merit: the most ambitious crossover event in history
-      image: more pepys/yume fanart idk?
+      image: amulet with image of eggplants growing
   
   - itch: topic-desire
     title: "Topic: desire"
     credit: pleiade
     award:
-      judge: Princess Daisy
-      merit: getting tired of being nice, wanting to go apeshit
-      image: kracko from kirby angry??
+      judge: Michel Foucault
+      merit: re-externalising internalised surveillance 
+      image: amulet with image of a cartoonish 3d eyeball
   
   - itch: joey-wamones-normal-bedtime-routine-that-is-absolutely-not-a-recurring-tooth-dec
     title: Joey Wamone's Normal Bedtime Routine That Is Absolutely Not A Recurring Tooth Decay Nightmare
@@ -111,23 +110,23 @@ games:
     award:
       judge: Hatchling Outer Wilds
       merit: endless deaths most violent
-      image: skull and bones?
+      image: amulet with image of a playstation 1 skeleton with a sword
   
   - itch: the-mouth-of-the-woods
     title: The Mouth Of The Woods
     credit: Jan U. Wine
     award:
       judge: Fox Mulder
-      merit: search for something greater than yourself, out there
-      image: the fucking drawing of big foot with boobs??
+      merit: something missing, and the search for something greater than yourself, out there
+      image: amulet with image of bigfoot
   
   - itch: crisis-a-go-go
     title:  The Curious Tale of Crisis A-Go-Go
     credit: BashCrandicoot
     award:
       judge: Betty Elms
-      merit: retreating from the horrors of life to live your sexiest self in dreams
-      image: the blue box/key from mulholland drive?
+      merit: retreating from the horrors of life to be your sexiest self in dreams
+      image: amulet with image of hands holding a mysterious box
   
   - itch: the-lamentation-of-the-forgotten-knight
     title: The Lamentation of the Forgotten Knight
@@ -135,7 +134,7 @@ games:
     award:
       judge: The Green Knight
       merit: a knight's faded lustre and lurid follies 
-      image: 
+      image: amulet with image of a solemn knight sitting cross-legged
   
   - itch: traumakt4
     title: TRAUMAKT~4.SEXE
@@ -143,7 +142,7 @@ games:
     award:
       judge: Willow Rosenberg
       merit: a queer love life complicated by demonic intrusion and a dumbass best friend
-      image: demonic shit idk?
+      image: amulet with image of a demon
   
   - itch: make-your-ancestors-smile-upon-you
     title: make your ancestors smile upon you ૮₍ ˶>⤙<˶ ₎ა
@@ -151,7 +150,7 @@ games:
     award:
       judge: God
       merit: creating weird little guys from clay
-      image: little guys idk? a 24 killers char?
+      image: amulet with image of a disembodied claymation hand creature
   
   - itch: sleep-paralysis-demon
     title: sleep paralysis demon
@@ -159,7 +158,7 @@ games:
     award:
       judge: Matt Shadows
       merit: a nightmare come to life
-      image: the bear from FNAF?
+      image: amulet with image of uncle fester
 
   - itch: an-assembly
     title: An Assembly of Toppling Figures - Spring 2023 Senior Art Exhibition
@@ -167,7 +166,7 @@ games:
     award:
       judge: Benoit Blanc
       merit: a compelling mystery that seems to make no damn sense
-      image: magnifying glass? mystery stuff?
+      image: amulet with image of a detective
 
   - itch: peepers
     title: peepers
@@ -175,7 +174,7 @@ games:
     award:
       judge: Syd March
       merit: intimate fluids sold at market value
-      image: photo slide idk?
+      image: amulet with image of test tubes
   
   - itch: dream-tube
     title: Dream Tube
@@ -184,6 +183,6 @@ games:
       - Australian Dave
     award:
       judge: Himemiya Anthy 
-      merit: hitting the bricks. roll credits, cue banger
-      image: da share zone?
+      merit: hitting da bricks. roll credits, cue banger
+      image: amulet with image of a skeleton running
 ---
