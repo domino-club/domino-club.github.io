@@ -1,0 +1,91 @@
+<style>
+	h1 {
+		display: none;
+	}
+
+	#btnRandomize {
+		cursor: pointer;
+		position: sticky;
+		top: 0.5rem;
+		z-index: 1;
+	}
+
+	body {
+		padding-bottom: 1rem;
+	}
+
+	{{/*  hide all games by default  */}}
+	.game {
+		display: none;
+	}
+</style>
+
+<noscript>The randomizer requires JavaScript to be enabled</noscript>
+
+{{/*  create list of all jam + standalone games */}}
+{{ $games := slice }}
+{{ $ids := slice }}
+{{- range where .Site.RegularPages.ByDate.Reverse "Type" "jams" -}}
+	{{- $jam := .File.TranslationBaseName -}}
+	{{- range .Params.games -}}
+		{{- $img := print "img/" $jam "/" .itch ".png" -}}
+		{{- $url := print "https://dominoclub.itch.io/" .itch -}}
+		{{- $game := merge . (dict "img" $img "url" $url) -}}
+		{{- $games = $games | append $game -}}
+		{{- $ids = $ids | append $game.itch -}}
+		{{- end -}}
+{{- end -}}
+{{ with site.GetPage "standalones" }}
+	{{- $jam := .File.TranslationBaseName -}}
+	{{- range .Params.games -}}
+		{{- $img := print "img/" $jam "/" .itch ".png" -}}
+		{{- $url := print "https://dominoclub.itch.io/" .itch -}}
+		{{- $game := merge . (dict "img" $img "url" $url) -}}
+		{{- $games = $games | append $game -}}
+		{{- $ids = $ids | append $game.itch -}}
+	{{- end -}}
+{{ end }}
+
+<button id="btnRandomize">randomize</button>
+
+<section class="jam-games-listing">
+	{{- range $games -}}
+		{{- partial "game-entry.html" . -}}
+	{{- end -}}
+</section>
+
+<script>
+function shuffle(array) {
+	const pool = array.slice();
+	const shuffled = [];
+	while (pool.length) {
+		const idx = Math.floor(Math.random() * pool.length);
+		shuffled.push(pool.splice(idx, 1));
+	}
+	return shuffled;
+}
+
+{{/*  serialize ids as js array  */}}
+const ids = {{- $ids | jsonify | safeJS -}};
+let idsShuffled = [];
+let idActive = '';
+
+function randomize() {
+	{{/*  hide currently shown game  */}}
+	const elLast = document.getElementById(idActive);
+	if (elLast) elLast.style.display = '';
+	
+	{{/*  show new game  */}}
+	if (!idsShuffled.length) idsShuffled = shuffle(ids);
+	idActive = idsShuffled.pop();
+	const elActive = document.getElementById(idActive);
+	if (!elActive) throw new Error(`Couldn't find game "${idActive}"`);
+	elActive.style.display = 'flex';
+}
+
+{{/*  start with a game shown  */}}
+randomize();
+
+const elBtnRandomize = document.getElementById('btnRandomize');
+elBtnRandomize.addEventListener('click', randomize);
+</script>
