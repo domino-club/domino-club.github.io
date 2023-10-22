@@ -9,20 +9,48 @@ games:
   - itch: sump
     title: Sump
     credit: CubeScore
-
+  
   - itch: tear-ripple
     title: tear ripple
     credit: julie profumo
-
+  
   - itch: dig-dirt
     title: DIG DIRT
     credit: Minecraft
-
+  
   - itch: pissedonpetite
     title: PISSED-ON PETITE PERVERT
     credit: name cannot be blank
-    
+  
   - itch: hackersuckerloser
     title: HACKER//SUCKER//LOSER
     credit: SUPER PATHETIC
+  
+  - itch: mushmushparty
+    title: mushmushparty
+    credit: roomroom
+  
+  - itch: dust-breeding
+    title: Dust Breeding
+    credit: Dermomaniac
+
+  - itch: melancholy
+    title: melancholy
+    credit: Democritus Jr II
+
+  - itch: my-gnome-wife-left-me
+    title: My Gnome Wife Left Me
+    credit: De Kabouter
+
+  - itch: six-inches-deep-in-mud
+    title: Six inches deep in mud
+    credit: Void Knight
+
+  - itch: joey-wamoneys-the-metamorphosis
+    title: "Joey Wamoney's: The Metamorphosis"
+    credit: Rock 'n Roll Highschool
+
+  - itch: world-pole-gaiden
+    title: "World Pole Gaiden RISE! Mark Of the Deck 2: Sanguine & Melancholia"
+    credit: Gatos of the Morning Walk
 ---
