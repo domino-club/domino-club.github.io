@@ -65,4 +65,8 @@ games:
   - itch: adverse-possession
     title: ADVERSE POSSESSION
     credit: an abominable pair of stinkards
+
+  - itch: the-devils-imago
+    title: THE DEVIL'S IMAGO
+    credit: EUGÈNE SAINT-GOBELIN, SORDIDUS PUBLIUS LATRINUS, CATHERINE de la HAUTE-CROIX des BEÛNES
 ---
