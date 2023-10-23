@@ -1,7 +1,7 @@
 ---
 layout: jam
 title: DREAM GALLERY JAM
-date: 2023-01-01T00:00:00Z
+date: 2023-04-09T00:00:00Z
 images:
   - img/dream-gallery-jam/banner.png
 description: DREAM GALLERY JAM. MAR 4-APR 9, 2023
