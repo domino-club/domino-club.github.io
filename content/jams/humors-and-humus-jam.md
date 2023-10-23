@@ -61,4 +61,8 @@ games:
   - itch: forest-memories-hidden-tales
     title: "Forest Memories: Hidden Tales"
     credit: gregory (mechanical jerk)
+  
+  - itch: adverse-possession
+    title: ADVERSE POSSESSION
+    credit: an abominable pair of stinkards
 ---
