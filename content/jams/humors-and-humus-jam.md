@@ -52,5 +52,13 @@ games:
 
   - itch: world-pole-gaiden
     title: "World Pole Gaiden RISE! Mark Of the Deck 2: Sanguine & Melancholia"
-    credit: Gatos of the Morning Walk
+    credit: Gatos of the Morning Wall
+  
+  - itch: ziptie-choker
+    title: Ziptie Choker
+    credit: The Indigo Children
+  
+  - itch: forest-memories-hidden-tales
+    title: "Forest Memories: Hidden Tales"
+    credit: gregory (mechanical jerk)
 ---
