@@ -52,7 +52,7 @@ games:
 
   - itch: world-pole-gaiden
     title: "World Pole Gaiden RISE! Mark Of the Deck 2: Sanguine & Melancholia"
-    credit: Gatos of the Morning Wall
+    credit: Gatos of the Morning Walk
   
   - itch: ziptie-choker
     title: Ziptie Choker
