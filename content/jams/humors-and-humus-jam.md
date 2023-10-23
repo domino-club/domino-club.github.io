@@ -24,7 +24,7 @@ games:
   
   - itch: hackersuckerloser
     title: HACKER//SUCKER//LOSER
-    credit: SUPER PATHETIC
+    credit: SUPER PATHETIC WORM GIRL
   
   - itch: mushmushparty
     title: mushmushparty
