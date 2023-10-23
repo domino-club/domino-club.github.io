@@ -69,4 +69,8 @@ games:
   - itch: the-devils-imago
     title: THE DEVIL'S IMAGO
     credit: EUGÈNE SAINT-GOBELIN, SORDIDUS PUBLIUS LATRINUS, CATHERINE de la HAUTE-CROIX des BEÛNES
+
+  - itch: exposition
+    title: exposition
+    credit: ogorki konserwowe
 ---
