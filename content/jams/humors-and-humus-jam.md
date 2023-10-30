@@ -73,4 +73,8 @@ games:
   - itch: exposition
     title: exposition
     credit: ogorki konserwowe
+  
+  - itch: homunculus
+    title: HOMUNCULUS
+    credit: one who forgot their name
 ---
