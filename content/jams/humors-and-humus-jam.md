@@ -77,4 +77,8 @@ games:
   - itch: homunculus
     title: HOMUNCULUS
     credit: one who forgot their name
+  
+  - itch: haustors-abbey
+    title: Haustors Abbey
+    credit: REV. MOTHER FAIRWEATHER-FUCHS and SISTER-OBEDIENTIARY DOROTHY CUNT
 ---
