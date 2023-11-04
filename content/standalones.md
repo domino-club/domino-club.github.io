@@ -58,4 +58,8 @@ games:
   - itch: sleeping-light-2
     title: Sleeping Light 2
     credit: secret fanta
+
+  - itch: solitairota
+    title: solitairota
+    credit: an abominable pair of stinkards
 ---
