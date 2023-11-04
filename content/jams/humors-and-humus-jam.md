@@ -12,7 +12,7 @@ games:
     award:
       judge: Ushiromiya Kinzo
       merit: an epitaph riddle solved over many deaths
-      image: award
+      image: noble lady (beatrice) sitting for a portrait
   
   - itch: tear-ripple
     title: tear ripple
@@ -20,7 +20,7 @@ games:
     award:
       judge: The Golden Witch Beatrice
       merit: a truth gleaned from adversarial fragments of perspective
-      image: award
+      image: crystal fragments floating
   
   - itch: dig-dirt
     title: DIG DIRT
@@ -28,7 +28,7 @@ games:
     award:
       judge: Saruman
       merit: putting creatures to work in the mines
-      image: award
+      image: the tower of orthanc
   
   - itch: pissedonpetite
     title: PISSED-ON PETITE PERVERT
@@ -36,7 +36,7 @@ games:
     award:
       judge: Misa The Killer
       merit: getting pissed on and stepped on with no regrets
-      image: award
+      image: bdsm dog collar
   
   - itch: hackersuckerloser
     title: HACKER//SUCKER//LOSER
@@ -44,7 +44,7 @@ games:
     award:
       judge: Geoffrey Chaucer
       merit: a most poetic illuminated manuscript
-      image: award
+      image: a quill
   
   - itch: mushmushparty
     title: mushmushparty
@@ -52,7 +52,7 @@ games:
     award:
       judge: En Dorohedo
       merit: an uncontrollable proliferation of mushrooms
-      image: award
+      image: a heap of mushrooms
   
   - itch: dust-breeding
     title: Dust Breeding
@@ -60,7 +60,7 @@ games:
     award:
       judge: Jan Švankmajer
       merit: plumbing the sensory depths of the body
-      image: award
+      image: a cotton bud sticking in an ear
 
   - itch: melancholy
     title: melancholy
@@ -68,7 +68,7 @@ games:
     award:
       judge: Cypher The Matrix
       merit: an epiphany on the bliss of ignorance
-      image: award
+      image: a cut of steak on a fork
 
   - itch: my-gnome-wife-left-me
     title: My Gnome Wife Left Me
@@ -76,7 +76,7 @@ games:
     award:
       judge: Gnome from "gnome video that i found"
       merit: the melancholy of potential unrealised
-      image: award
+      image: a gnome
 
   - itch: six-inches-deep-in-mud
     title: Six inches deep in mud
@@ -84,7 +84,7 @@ games:
     award:
       judge: Thomasin The VVitch
       merit: dysfunctional homesteading and naked creatures in the woods
-      image: award
+      image: an axe resting in a tree stump
 
   - itch: joey-wamoneys-the-metamorphosis
     title: "Joey Wamoney's: The Metamorphosis"
@@ -92,7 +92,7 @@ games:
     award:
       judge: Dwayne Home Movies
       merit: a rock opera biography of a historical weirdo
-      image: award
+      image: a pair of very long legs
 
   - itch: world-pole-gaiden
     title: "World Pole Gaiden RISE! Mark Of the Deck 2: Sanguine & Melancholia"
@@ -100,7 +100,7 @@ games:
     award:
       judge: Gambit X-Men
       merit: a fast talking smart alec slinging cards and chasing babes
-      image: award
+      image: a hand holding a single playing card
   
   - itch: ziptie-choker
     title: Ziptie Choker
@@ -108,7 +108,7 @@ games:
     award:
       judge: Reki Haibane Renmei
       merit: a tortured angel, yanked along by the leash of life, ready to burn it all away
-      image: award
+      image: a pair of angel wings
   
   - itch: forest-memories-hidden-tales
     title: "Forest Memories: Hidden Tales"
@@ -116,7 +116,7 @@ games:
     award:
       judge: Thirsty Little Flower
       merit: a terminal illness requiring unconventional medicine
-      image: award
+      image: a flower with a face
   
   - itch: adverse-possession
     title: ADVERSE POSSESSION
@@ -124,7 +124,7 @@ games:
     award:
       judge: Tinkerbell
       merit: audience participation in the resurrection of a character
-      image: award
+      image: praying hands
 
   - itch: the-devils-imago
     title: THE DEVIL'S IMAGO
@@ -132,7 +132,7 @@ games:
     award:
       judge: M.R. James
       merit: a tale of primeval forces, unknown, uncaring, and unearthed
-      image: award
+      image: a cicada
 
   - itch: exposition
     title: exposition
@@ -140,7 +140,7 @@ games:
     award:
       judge: Cloud Strife
       merit: dragging your partner up a very long staircase
-      image: award
+      image: a gantry spiral staircase
   
   - itch: homunculus
     title: HOMUNCULUS
@@ -148,5 +148,13 @@ games:
     award:
       judge: Baby Yoda
       merit: a little guy going out into the world
-      image: award
+      image: a bindle
+  
+  - itch: haustors-abbey
+    title: Haustors Abbey
+    credit: REV. MOTHER FAIRWEATHER-FUCHS and SISTER-OBEDIENTIARY DOROTHY CUNT
+    award:
+      judge: Merlin Sheldrake
+      merit: life from the perspective of the fungal and the connected
+      image: a bundle of connected fibers
 ---
