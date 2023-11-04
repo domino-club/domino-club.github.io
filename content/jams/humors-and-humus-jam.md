@@ -151,7 +151,7 @@ games:
       image: a bindle
   
   - itch: haustors-abbey
-    title: Haustors Abbey
+    title: Haustor's Abbey
     credit: REV. MOTHER FAIRWEATHER-FUCHS and SISTER-OBEDIENTIARY DOROTHY CUNT
     award:
       judge: Merlin Sheldrake
