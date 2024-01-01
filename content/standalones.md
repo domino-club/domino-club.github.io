@@ -62,4 +62,8 @@ games:
   - itch: solitairota
     title: solitairota
     credit: an abominable pair of stinkards
+
+  - itch: pole-monster
+    title: 'World Pole Gaiden: Some Kind of Pole Monster'
+    credit: CHOLINE MOCKREY
 ---
