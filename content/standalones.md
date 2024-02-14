@@ -66,4 +66,8 @@ games:
   - itch: pole-monster
     title: 'World Pole Gaiden: Some Kind of Pole Monster'
     credit: CHOLINE MOCKREY
+
+  - itch: stairup
+    title: stairup
+    credit: GOD TOH LIVE
 ---
