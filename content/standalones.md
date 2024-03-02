@@ -70,4 +70,8 @@ games:
   - itch: stairup
     title: stairup
     credit: GOD TOH LIVE
+
+  - itch: nat-zine
+    title: The Nat DOMINO Fanzine
+    credit: Dommy Nique
 ---
