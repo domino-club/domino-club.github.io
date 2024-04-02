@@ -8,11 +8,29 @@
 }
 
 @font-face {
+    font-family: 'Space Mono Fallback';
+    src: local("Consolas");
+    size-adjust: 111%;
+    ascent-override: 112%;
+    descent-override: 36.1%;
+    line-gap-override: 0%;
+}
+
+@font-face {
     font-family: 'Palanquin Dark';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
     src: url("/fonts/PalanquinDark-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Palanquin Dark Fallback';
+    src: local("Arial");
+    size-adjust: 100.5%;
+    ascent-override: 132%;
+    descent-override: 49.1%;
+    line-gap-override: 0%;
 }
 
 @font-face {
@@ -28,6 +46,15 @@
     font-style: italic;
     font-display: swap;
     src: url("/fonts/JosefinSans-Italic-VariableFont_wght.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Josefin Sans Fallback';
+    src: local("Arial");
+    size-adjust: 101.4%;
+    ascent-override: 75%;
+    descent-override: 25%;
+    line-gap-override: 0%;
 }
 
 @counter-style base-seven-enjoyer {
@@ -56,7 +83,7 @@ html {
     background-color: black;
     color: white;
     font-size: 20px;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Space Mono', 'Space Mono Fallback', monospace;
     scrollbar-color: white rgba(0, 0, 0, 0);
 
     line-height: 1.5;
@@ -78,7 +105,7 @@ html::-webkit-scrollbar-track {
 h1,
 h2 {
     text-align: center;
-    font-family: 'Palanquin Dark', sans-serif;
+    font-family: 'Palanquin Dark', 'Palanquin Dark Fallback', sans-serif;
     margin: 2%;
 }
 
@@ -129,7 +156,7 @@ picture>img {
 
 .credit {
     color: var(--main-author-color);
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', 'Josefin Sans Fallback', sans-serif;
     font-weight: 300;
 
     text-align: center;
@@ -151,7 +178,7 @@ article .credit {
 .all_jams {
     list-style-type: base-seven-enjoyer;
     list-style-position: inside;
-    font-family: 'Palanquin Dark', sans-serif;
+    font-family: 'Palanquin Dark', 'Palanquin Dark Fallback', sans-serif;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -180,7 +207,7 @@ article .credit {
 }
 
 .all_jams li::marker {
-    font-family: 'Palanquin Dark', sans-serif;
+    font-family: 'Palanquin Dark', 'Palanquin Dark Fallback', sans-serif;
     font-size: 1.5em;
 }
 
@@ -308,7 +335,7 @@ article .credit {
     font-size: 1.5rem;
     font-weight: bold;
     text-shadow: 1px 1px var(--main-bg-color);
-    font-family: 'Palanquin Dark', sans-serif;
+    font-family: 'Palanquin Dark', 'Palanquin Dark Fallback', sans-serif;
     border-bottom: 1px dashed var(--main-border-color);
     padding-bottom: 0.5rem;
 }
@@ -326,7 +353,7 @@ article .credit {
     font-style: bold;
     color: white;
     font-size: 2rem;
-    font-family: 'Palanquin Dark', sans-serif;
+    font-family: 'Palanquin Dark', 'Palanquin Dark Fallback', sans-serif;
 }
 
 .section-nav>span {
