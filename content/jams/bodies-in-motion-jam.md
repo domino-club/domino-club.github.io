@@ -42,4 +42,36 @@ games:
       - POTEMKIN_PUSSY
       - STSplantilla
       - I.V. Valentine
+    
+  - itch: courts
+    title: Courts
+    credit: emotion orb
+  
+  - itch: horses-are-now-obsolete
+    title: Horses Are Now Obsolete
+    credit: 
+      - Darth Icky
+      - Darth Mario
+  
+  - itch: pleasuredrome
+    title: pleasuredrome
+    credit: processed sleaze single
+  
+  - itch: deathlete-zeug
+    title: "Heaven's Cybernetic (De)Athlete: ZEUG"
+    credit:
+      - Let Me Body Myself
+      - Iron Blooded Angel
+  
+  - itch: catboy-cricket
+    title: Catboy Cricket
+    credit: skibidis toilette
+  
+  - itch: sssm-moons-of-jupiter
+    title: "SSSM: moons of jupiter"
+    credit: found generation
+
+  - itch: wolves-of-the-moon
+    title: Wolves of the Moon
+    credit: Ecce Homo
 ---
