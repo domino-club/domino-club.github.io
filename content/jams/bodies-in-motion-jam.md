@@ -1,7 +1,7 @@
 ---
 layout: jam
 title: BODIES IN MOTION JAM
-date: 2024-4-8T00:00:00Z
+date: 2024-04-08T00:00:00Z
 images:
   - img/bodies-in-motion-jam/banner.png
 description: Bodies in Motion Jam. Mar 2 - Apr 8, 2024
@@ -74,4 +74,8 @@ games:
   - itch: wolves-of-the-moon
     title: Wolves of the Moon
     credit: Ecce Homo
+
+  - itch: spectator
+    title: Spectator
+    credit: Quincy Gunders
 ---
