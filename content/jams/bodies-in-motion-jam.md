@@ -78,4 +78,10 @@ games:
   - itch: spectator
     title: Spectator
     credit: Quincy Gunders
+  
+  - itch: domino-pro-wrestling
+    title: Domino Pro Wrestling
+    credit:
+      - Mossy Cleft
+      - Oopsie Daisy
 ---
