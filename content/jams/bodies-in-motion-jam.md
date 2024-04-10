@@ -84,4 +84,8 @@ games:
     credit:
       - Mossy Cleft
       - Oopsie Daisy
+  
+  - itch: interview-with-the-onion
+    title: interview with the onion
+    credit: the onion
 ---
