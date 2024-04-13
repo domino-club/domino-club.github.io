@@ -88,4 +88,10 @@ games:
   - itch: interview-with-the-onion
     title: interview with the onion
     credit: the onion
+
+  - itch: cereballers
+    title: CEREBALLERS
+    credit:
+      - JOHN WADDEN
+      - BANKSY
 ---
