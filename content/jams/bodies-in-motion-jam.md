@@ -94,4 +94,10 @@ games:
     credit:
       - JOHN WADDEN
       - BANKSY
+  
+  - itch: no-joy-in-mudville
+    title: No Joy In Mudville
+    credit:
+      - Benchwarmer Beelzebub
+      - Broken-bat Behemoth
 ---
