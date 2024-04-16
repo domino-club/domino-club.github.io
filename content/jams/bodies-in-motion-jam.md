@@ -104,4 +104,10 @@ games:
   - itch: giving-yourself-away
     title: Giving yourself away
     credit: ALDOCAPO
+  
+  - itch: sudden-death
+    title: SUDDEN DEATH
+    credit:
+      - BENNY BARASSI
+      - GEELONG CATGIRL
 ---
