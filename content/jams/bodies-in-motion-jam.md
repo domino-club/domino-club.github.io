@@ -100,4 +100,8 @@ games:
     credit:
       - Benchwarmer Beelzebub
       - Broken-bat Behemoth
+  
+  - itch: giving-yourself-away
+    title: Giving yourself away
+    credit: ALDOCAPO
 ---
