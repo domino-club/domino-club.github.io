@@ -1,0 +1,39 @@
+<style>
+	h1 {
+		display: none;
+	}
+
+	body {
+		padding-bottom: 1rem;
+	}
+</style>
+
+{{/*  create list of all jam + standalone games */}}
+{{ $games := slice }}
+{{ $ids := slice }}
+{{- range where .Site.RegularPages.ByDate.Reverse "Type" "jams" -}}
+	{{- $jam := .File.TranslationBaseName -}}
+	{{- range .Params.games -}}
+		{{- $img := print "img/" $jam "/" .itch ".png" -}}
+		{{- $url := print "https://dominoclub.itch.io/" .itch -}}
+		{{- $game := merge . (dict "img" $img "url" $url) -}}
+		{{- $games = $games | append $game -}}
+		{{- $ids = $ids | append $game.itch -}}
+		{{- end -}}
+{{- end -}}
+{{ with site.GetPage "standalones" }}
+	{{- $jam := .File.TranslationBaseName -}}
+	{{- range .Params.games -}}
+		{{- $img := print "img/" $jam "/" .itch ".png" -}}
+		{{- $url := print "https://dominoclub.itch.io/" .itch -}}
+		{{- $game := merge . (dict "img" $img "url" $url) -}}
+		{{- $games = $games | append $game -}}
+		{{- $ids = $ids | append $game.itch -}}
+	{{- end -}}
+{{ end }}
+
+<section class="jam-games-listing">
+	{{- range $games -}}
+		{{- partial "game-entry.html" . -}}
+	{{- end -}}
+</section>

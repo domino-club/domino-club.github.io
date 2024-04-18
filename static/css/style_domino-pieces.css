@@ -120,6 +120,11 @@ body {
     align-items: center;
 }
 
+footer {
+    margin-block: 1rem;
+    text-align: center;
+}
+
 a {
     color: var(--main-link-color);
 }
