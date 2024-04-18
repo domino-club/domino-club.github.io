@@ -144,19 +144,23 @@ picture>img {
 }
 
 #home_banner > img {
+    display: block;
     max-width: 100%;
-    max-height: 35vh;
+    height: 35vmin;
     width: auto;
-    height: auto;
     object-fit: scale-down;
     object-position: center;
+    text-align: center;
 }
 
 #jam_banner {
+    display: block;
     max-width: 100%;
-    max-height: 10rem;
+    height: 10rem;
     width: auto;
-    height: auto;
+    object-fit: scale-down;
+    object-position: center;
+    text-align: center;
 }
 
 .credit {
