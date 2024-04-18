@@ -110,4 +110,10 @@ games:
     credit:
       - BENNY BARASSI
       - GEELONG CATGIRL
+  
+  - itch: anhedonia
+    title: anhedonia
+    credit:
+      - Bafta Deznut
+      - Cherd of Hargers
 ---
