@@ -1,48 +1,50 @@
 {{ define "main" }}
-  {{ $jam := .File.TranslationBaseName }}
-  {{ $jamPage := .GetPage (print "/jams/" $jam) }}
-  
-  <h1>
-    {{ .Params.title }}
-  </h1>
+  {{ if .File }}
+    {{ $jam := .File.TranslationBaseName }}
+    {{ $jamPage := .GetPage (print "/jams/" $jam) }}
 
-  {{ with .Params.artists }}
-    <p class="credit">
-      with award art by 
-      {{ if reflect.IsSlice . -}}
-        {{- $num := len . -}}
-        {{- range $index, $author := . -}}
-          {{- if eq $index (add $num -1) }}
-            </span> <span>and 
-          {{ else if $index -}}
-            ,</span> <span>
-          {{ end -}}
-          <a href="{{ .url }}" rel="author"><em>{{ replace .name "_" "\u200B_" }}</em></a></span>
+    <h1>
+      {{ .Params.title }}
+    </h1>
+
+    {{ with .Params.artists }}
+      <p class="credit">
+        with award art by 
+        {{ if reflect.IsSlice . -}}
+          {{- $num := len . -}}
+          {{- range $index, $author := . -}}
+            {{- if eq $index (add $num -1) }}
+              </span> <span>and 
+            {{ else if $index -}}
+              ,</span> <span>
+            {{ end -}}
+            <a href="{{ .url }}" rel="author"><em>{{ replace .name "_" "\u200B_" }}</em></a></span>
+          {{- end -}}
+        {{- else -}}
+          <a href="{{ .url }}" rel="author"><em>{{ replace .name "_" "\u200B_" }}</em></a>
         {{- end -}}
-      {{- else -}}
-        <a href="{{ .url }}" rel="author"><em>{{ replace .name "_" "\u200B_" }}</em></a>
-      {{- end -}}
-    </p>
-  {{ end }}
-
-  {{ with .Content }}
-    {{ . }}
-  {{ end }}
-  
-  <section class="jam-awards-listing" data-jam="{{ $jam }}" style="--award-height: {{ .Params.awardImageHeight }}px">
-    {{/* for every game in the corresponding jam, */}}
-    {{ range $jamPage.Params.games }}
-      {{/* determine thumbnail path from jam page name and itch page name */}}
-      {{ $img := print "img/" $jam "/awards/" .itch ".png" }}
-      {{ $url := print "https://dominoclub.itch.io/" .itch }}
-      {{ $game := merge . (dict "img" $img "url" $url "jam" $jam "height" $.Params.awardImageHeight) }}
-
-      {{/* pass relevant data to per-game template */}}
-      {{- partial "award-entry.html" $game -}}
+      </p>
     {{ end }}
-  </section>
-  
-  <script src="/js/shuffle.js"></script>
 
-  {{ partial "section-nav.html" .}}
+    {{ with .Content }}
+      {{ . }}
+    {{ end }}
+    
+    <section class="jam-awards-listing" data-jam="{{ $jam }}" style="--award-height: {{ .Params.awardImageHeight }}px">
+      {{/* for every game in the corresponding jam, */}}
+      {{ range $jamPage.Params.games }}
+        {{/* determine thumbnail path from jam page name and itch page name */}}
+        {{ $img := print "img/" $jam "/awards/" .itch ".png" }}
+        {{ $url := print "https://dominoclub.itch.io/" .itch }}
+        {{ $game := merge . (dict "img" $img "url" $url "jam" $jam "height" $.Params.awardImageHeight) }}
+
+        {{/* pass relevant data to per-game template */}}
+        {{- partial "award-entry.html" $game -}}
+      {{ end }}
+    </section>
+    
+    <script src="/js/shuffle.js"></script>
+
+    {{ partial "section-nav.html" .}}
+  {{ end }}
 {{ end }}
