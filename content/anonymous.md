@@ -13,3 +13,11 @@ This is **not** for jokes, misdirection, or any other ironic usage. If you use t
 This will post a message to the **#domino-anonymous** channel on the domino club discord. Tagging users and channels doesn't work. Custom emoji won't show.
 
 You can non-anonymously contact **candle** or **Emma** privately if you feel your sensitive issue can't be raised using this system.
+
+## SUBMISSION GUIDE
+* Create new project on domino club itch
+* Set "Pricing" to "No payments"
+* Set "Visibility & access" to "Draft"
+* List credits/pseudonyms on the page
+* Optionally, encourage remixing with 🔑 (any) or 🔐 (no nsfw) on the page
+* Submit with "JAM SUBMISSION" template above
