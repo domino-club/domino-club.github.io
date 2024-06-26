@@ -18,5 +18,6 @@ You can non-anonymously contact **candle** or **Emma** privately if you feel you
 * Create new project on domino club itch
 * Set "Pricing" to "No payments"
 * Set "Visibility & access" to "Draft"
+* List credits/pseudonyms on the page
 * Optionally, encourage remixing with 🔑 (any) or 🔐 (no nsfw) on the page
 * Submit with "JAM SUBMISSION" template above
