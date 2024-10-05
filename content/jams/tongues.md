@@ -33,4 +33,16 @@ games:
   - itch: monolingual
     title: MONOLINGUAL LANGUAGE DIARY
     credit: dark wizard almorzamos
+
+  - itch: cries-of-the-carcass-eater
+    title: Cries of the Carcass Eater
+    credit: The Silly Sisters
+
+  - itch: external-communication
+    title: "[EXTERNAL COMMUNICATION]"
+    credit: Manuel De Bridément
+
+  - itch: divine-hunger
+    title: Divine Hunger
+    credit: Horror
 ---
