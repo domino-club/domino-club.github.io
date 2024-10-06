@@ -44,5 +44,9 @@ games:
 
   - itch: divine-hunger
     title: Divine Hunger
-    credit: Horror
+    credit: Horror Chris
+
+  - itch: word-salad
+    title: Word Salad
+    credit: Saussure
 ---
