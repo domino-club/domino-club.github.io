@@ -1,7 +1,7 @@
 ---
 layout: jam
 title: TONGUES JAM
-date: 2024-10-05T00:00:00Z
+date: 2024-10-06T00:00:00Z
 images:
   - img/bodies-in-motion-jam/banner.png
 description: tongues jam. aug 31 - oct 6, 2024
@@ -49,4 +49,8 @@ games:
   - itch: word-salad
     title: Word Salad
     credit: Saussure
+
+  - itch: babel
+    title: A Sample of the Inscrutable Languages of Babel
+    credit: Potato Music
 ---
