@@ -53,4 +53,8 @@ games:
   - itch: babel
     title: A Sample of the Inscrutable Languages of Babel
     credit: Potato Music
+
+  - itch: break
+    title: BREAK
+    credit: alone
 ---
