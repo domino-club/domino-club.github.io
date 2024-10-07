@@ -1,7 +1,7 @@
 ---
 layout: jam
 title: TONGUES JAM
-date: 2024-10-06T00:00:00Z
+date: 2024-10-07T00:00:00Z
 images:
   - img/tongues-jam/banner.png
 description: tongues jam. aug 31 - oct 6, 2024
