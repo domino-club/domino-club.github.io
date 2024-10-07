@@ -61,4 +61,8 @@ games:
   - itch: lord-of-lies
     title: lord of lies
     credit: Satan, the great deceiver
+
+  - itch: keepsakes
+    title: KEEPSAKES
+    credit: VITRIOL WORKS
 ---
