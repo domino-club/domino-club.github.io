@@ -3,7 +3,7 @@ layout: jam
 title: TONGUES JAM
 date: 2024-10-06T00:00:00Z
 images:
-  - img/bodies-in-motion-jam/banner.png
+  - img/tongues-jam/banner.png
 description: tongues jam. aug 31 - oct 6, 2024
 games:
   - itch: hate-mail
@@ -57,4 +57,8 @@ games:
   - itch: break
     title: BREAK
     credit: alone
+
+  - itch: lord-of-lies
+    title: lord of lies
+    credit: Satan, the great deceiver
 ---
