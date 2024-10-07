@@ -23,7 +23,7 @@ games:
     credit: Dirty, Princess, and Boy-Parser
 
   - itch: where-in-the-word-is-farming-sandy-eggo
-    title: WHERE IN THE WORLD IS FARMING SANDY EGGO?
+    title: WHERE IN THE WORD IS FARMING SANDY EGGO?
     credit: Ooh Yeah Baby
 
   - itch: joey-wamones-improbably-inverse-archaeological-expedition
