@@ -65,4 +65,8 @@ games:
   - itch: keepsakes
     title: KEEPSAKES
     credit: VITRIOL WORKS
+
+  - itch: cntract
+    title: C♥ntract
+    credit: the Solicitors of the Heart
 ---
