@@ -6,7 +6,7 @@ images:
   - img/tongues-jam/banner.png
 description: TONGUES JAM AWARDS. OCT 20, 2024
 artists:
-  - name: Emma Daues
-    url: https://emmadaues.itch.io/
+  name: Emma Daues
+  url: https://emmadaues.itch.io/
 awardImageHeight: 400
 ---
