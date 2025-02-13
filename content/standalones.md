@@ -74,4 +74,8 @@ games:
   - itch: nat-zine
     title: The Nat DOMINO Fanzine
     credit: Dommy Nique
+
+  - itch: a-perfectly-normal-date-in-the-world-of-sandy-eggo
+    title: A PERFECTLY NORMAL DATE IN THE WORLD OF SANDY EGGO
+    credit: AHH NOO BABY
 ---
