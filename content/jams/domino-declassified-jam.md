@@ -1,7 +1,7 @@
 ---
 layout: jam
 title: "DOMINO: DECLASSIFIED JAM"
-date: 2025-04-01T00:00:00Z
+date: 2025-04-04T00:00:00Z
 images:
   - img/domino-declassified-jam/banner.webp
 description: "DOMINO: DECLASSIFIED Jam. May 1 - Apr 6, 2025"
@@ -45,4 +45,12 @@ games:
   - itch: a-long-walk-home
     title: A Long Walk Home
     credit: I_Didn't_Do_It
+
+  - itch: alien-autopsy
+    title: Alien Autopsy
+    credit: a pale horse
+  
+  - itch: outside-agent
+    title: outside agent
+    credit: gastroterrestrial
 ---
