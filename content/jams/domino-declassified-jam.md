@@ -1,7 +1,7 @@
 ---
 layout: jam
 title: "DOMINO: DECLASSIFIED JAM"
-date: 2025-04-04T00:00:00Z
+date: 2025-04-07T00:00:00Z
 images:
   - img/domino-declassified-jam/banner.webp
 description: "DOMINO: DECLASSIFIED Jam. May 1 - Apr 6, 2025"
@@ -53,4 +53,8 @@ games:
   - itch: outside-agent
     title: outside agent
     credit: gastroterrestrial
+
+  - itch: portrait-on-imagined-horizon
+    title: portrait on imagined horizon
+    credit: MEMOIRE VIVANTE
 ---
