@@ -57,4 +57,8 @@ games:
   - itch: portrait-on-imagined-horizon
     title: portrait on imagined horizon
     credit: MEMOIRE VIVANTE
+
+  - itch: after-exposure
+    title: after exposure
+    credit: F2
 ---
