@@ -111,4 +111,12 @@ games:
       judge: Zampanó
       merit: mysteries upon mysteries correlated into more questions
       image:
+
+  - itch: after-exposure
+    title: after exposure
+    credit: F2
+    award:
+      judge: 
+      merit: 
+      image:
 ---
