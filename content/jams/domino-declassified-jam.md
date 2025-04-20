@@ -61,4 +61,8 @@ games:
   - itch: after-exposure
     title: after exposure
     credit: F2
+
+  - itch: two-way
+    title: Two-Way
+    credit: fumar mata
 ---
