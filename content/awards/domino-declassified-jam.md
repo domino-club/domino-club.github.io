@@ -7,6 +7,6 @@ images:
 description: "DOMINO: DECLASSIFIED AWARDS"
 artists:
   name: Mariken
-  url: marikedrawinge.com
+  url: https://marikedrawinge.com
 awardImageHeight: 330
 ---
