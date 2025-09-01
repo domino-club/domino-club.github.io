@@ -3,7 +3,7 @@ layout: jam
 title: "DOMINO: DECLASSIFIED JAM"
 date: 2025-04-07T00:00:00Z
 images:
-  - img/domino-declassified-jam/banner.webp
+  - img/domino-declassified-jam/banner.png
 description: "DOMINO: DECLASSIFIED Jam. May 1 - Apr 6, 2025"
 games:
   - itch: the-infinity-code
