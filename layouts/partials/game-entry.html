@@ -11,26 +11,23 @@
   <div class="game_text">
     <a href="{{ .url }}" target="_blank" rel="noopener" class="game_link">{{ replaceRE `([_.~-])` "\u200B$1" .title }} </a>
     {{/* if there are credits, */}}
-    {{ with .credit }}
+    {{- with .credit -}}
       <p class="credit">
-        <span>
-          by&nbsp;
           {{- if reflect.IsSlice . -}}
             {{- $num := len . -}}
             {{- range $index, $author := . -}}
-              {{- if eq $index (add $num -1) }}
-                </span> <span>and 
-              {{ else if $index -}}
-                ,</span> <span>
-              {{ end -}}
-              <em>{{ replaceRE `([_.~-])` "\u200B$1" . }}</em>
-              </span>
+              {{- if eq $index 0 -}}<span>by&nbsp;<em>
+              {{- else if eq $index (add $num -1) }} <span>and <em>
+              {{ else -}}<span><em>
+              {{- end -}}
+              {{- replaceRE `([_.~-])` "\u200B$1" . -}}</em>
+              {{- if lt $index (add $num -2) -}},</span> 
+              {{ else -}}</span>
+              {{- end -}}
             {{- end -}}
-          {{- else -}}
-            <em>{{ replaceRE `([_.~-])` "\u200B$1" . }}</em>
+          {{- else -}}<span>by&nbsp;<em>{{- replaceRE `([_.~-])` "\u200B$1" . -}}</em></span>
           {{- end -}}
-        </span>
       </p>
-    {{ end }}
+    {{- end -}}
   </div>
 </article>
