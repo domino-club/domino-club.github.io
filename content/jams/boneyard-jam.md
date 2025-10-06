@@ -58,6 +58,7 @@ games:
   - itch: memorel
     title: MEMOREL RESTORATION PROJECT
     credit: 
+      - IS IT REVERSIBLE WITH CREAM
       - SORROWFUL MOTHER
       - ANON
       - IAN EMO
