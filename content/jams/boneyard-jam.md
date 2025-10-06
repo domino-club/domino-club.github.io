@@ -65,4 +65,8 @@ games:
       - PARVA VIVENTEM
       - AGATHA CRYSTALS
       - HORNYMILF 696969
+
+  - itch:  8arms
+    title: 8arms
+    credit: Quatre Vanderworth
 ---
