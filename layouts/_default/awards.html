@@ -18,10 +18,10 @@
             {{ else if $index -}}
               ,</span> <span>
             {{ end -}}
-            <a href="{{ .url }}" rel="author"><em>{{ replace .name "_" "\u200B_" }}</em></a></span>
+            {{ if .url }}<a href="{{ .url }}" rel="author"><em>{{ replace .name "_" "\u200B_" }}</em></a>{{ else }}<em>{{ replace .name "_" "\u200B_" }}</em>{{ end }}</span>
           {{- end -}}
         {{- else -}}
-          <a href="{{ .url }}" rel="author"><em>{{ replace .name "_" "\u200B_" }}</em></a>
+          {{ if .url }}<a href="{{ .url }}" rel="author"><em>{{ replace .name "_" "\u200B_" }}</em></a>{{ else }}<em>{{ replace .name "_" "\u200B_" }}</em>{{ end }}
         {{- end -}}
       </p>
     {{ end }}
