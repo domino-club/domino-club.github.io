@@ -3,7 +3,7 @@ layout: jam
 title: "BONEYARD JAM"
 date: 2025-06-10T00:00:00Z
 images:
-  - img/boneyard-jam/banner.webp
+  - img/boneyard-jam/banner.png
 description: "Boneyard Jam. Aug 30 - Oct 5, 2025"
 games:
   - itch: joey-wamone-vs-the-danger
