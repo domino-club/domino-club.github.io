@@ -29,4 +29,8 @@ games:
   - itch: bootleg
     title: Betelgeuse Bootleg Games
     credit: xxLILCOCOLOCHxx
+
+  - itch: the-killer
+    title: The Killer
+    credit: The Killer
 ---
