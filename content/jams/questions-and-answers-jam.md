@@ -33,4 +33,8 @@ games:
   - itch: the-killer
     title: The Killer
     credit: The Killer
+  
+  - itch: domino-club-ii
+    title: DOMINO CLUB II
+    credit: THE CHEATER
 ---
