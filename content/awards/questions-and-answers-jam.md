@@ -1,7 +1,7 @@
 ---
 layout: awards
 title: "QUESTIONS & ANSWERS JAM AWARDS"
-date: 2025-04-20T00:00:00Z
+date: 2026-04-26T00:00:00Z
 images:
   - img/questions-and-answers-jam/banner.png
 description: "DOMINO: DECLASSIFIED AWARDS"
