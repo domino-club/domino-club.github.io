@@ -34,5 +34,15 @@ games:
   
   - itch: terminus-sexdrive
     title: "TERMINUS: Sexdrive"
-    credit: Bogus Handjob
+    credit: 
+      - Suzuki Lapin
+      - Bogus Handjob
+ 
+  - itch: rest-stop
+    title: rest stop
+    credit: lairy pess
+  
+  - itch: hotwife-chronicle
+    title: hotwife chronicle
+    credit: Yellow Potion
 ---
