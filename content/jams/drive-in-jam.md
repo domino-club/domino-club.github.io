@@ -29,7 +29,7 @@ games:
     credit: THE LOVER OF THE CHEMICAL
   
   - itch: the-sun-never-sets-for-those-who-ride-into-it
-    title: the sun never sets for those who ride into
+    title: the sun never sets for those who ride into it
     credit: QUARTERMILE
   
   - itch: terminus-sexdrive
@@ -45,4 +45,8 @@ games:
   - itch: hotwife-chronicle
     title: hotwife chronicle
     credit: Yellow Potion
+  
+  - itch: creature-feature
+    title: Creature Feature or A change has occurred and now nothing will ever be the same again
+    credit: The Good Doctor
 ---
