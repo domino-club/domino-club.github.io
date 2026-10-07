@@ -49,4 +49,8 @@ games:
   - itch: creature-feature
     title: Creature Feature or A change has occurred and now nothing will ever be the same again
     credit: The Good Doctor
+  
+  - itch: adventure
+    title: ADVENTURE
+    credit: SOMEONE ELSE
 ---
