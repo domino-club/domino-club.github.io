@@ -53,4 +53,8 @@ games:
   - itch: adventure
     title: ADVENTURE
     credit: SOMEONE ELSE
+  
+  - itch: an-inquisition
+    title: An Inquisition
+    credit: larkspur et al.
 ---
