@@ -78,4 +78,8 @@ games:
   - itch: a-perfectly-normal-date-in-the-world-of-sandy-eggo
     title: A PERFECTLY NORMAL DATE IN THE WORLD OF SANDY EGGO
     credit: AHH NOO BABY
+
+  - itch: garfenizer
+    title: garfenizer
+    credit: NERMAL KIN
 ---
