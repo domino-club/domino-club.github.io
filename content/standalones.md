@@ -86,4 +86,8 @@ games:
   - itch: lametations-zine
     title: a lamentations zine
     credit: secret fanta
+
+  - itch: armpits
+    title: the girl who was hypnotized to huff armpits
+    credit: greyfeather
 ---
