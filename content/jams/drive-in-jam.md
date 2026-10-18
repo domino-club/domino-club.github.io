@@ -14,7 +14,7 @@ games:
     award:
       judge: Keiichi Maebara
       merit: being held hostage by card sharks
-      image: ...
+      image: a human hand holding a hand of four aces and a joker
   
   - itch: unfinished-minecraft-clone
     title: Unfinished Minecraft Clone
@@ -22,7 +22,7 @@ games:
     award:
       judge: Paul Petscop
       merit: peering behind the scenes of an unfinished video game world
-      image: ...
+      image: a glitchy car surrounded by error messages
   
   - itch: hey-chat-are-we-cooked
     title: hey chat, are we cooked?
@@ -30,7 +30,7 @@ games:
     award:
       judge: Ted Kaczynski
       merit: witnessing the world turn to ruin in real time
-      image: ...
+      image: a coca cola ad that says "consume" when seen through overlapping sunglasses
   
   - itch: at-a-distance
     title: At A Distance
@@ -38,7 +38,7 @@ games:
     award:
       judge: Lost Girl
       merit: a recursive audience to a recursive fiction
-      image: ...
+      image: tearful girl seen through car rearview mirror
   
   - itch: skin2
     title: Skin2
@@ -46,7 +46,7 @@ games:
     award:
       judge: Michael Levin
       merit: unleashing innate biological power of total self-transformation
-      image: ...
+      image: bumper stickers about body modification
   
   - itch: the-sun-never-sets-for-those-who-ride-into-it
     title: the sun never sets for those who ride into it
@@ -54,7 +54,7 @@ games:
     award:
       judge: Max Rockatansky
       merit: a lone rider struggling to find meaning beyond the road
-      image: ...
+      image: a huge fucking car engine with a skull mask on top
   
   - itch: terminus-sexdrive
     title: "TERMINUS: Sexdrive"
@@ -64,7 +64,7 @@ games:
     award:
       judge: John Haynes
       merit: a comprehensive manual for servicing the machine
-      image: ...
+      image: a haynes car manual
  
   - itch: rest-stop
     title: rest stop
@@ -80,7 +80,7 @@ games:
     award:
       judge: Deanna Troi
       merit: unusual consequences of an empathic connection
-      image: ...
+      image: a box of fisherman's friends
   
   - itch: creature-feature
     title: Creature Feature or A change has occurred and now nothing will ever be the same again
@@ -88,13 +88,21 @@ games:
     award:
       judge: Seth Brundle
       merit: new forms of life born from the fusion of bugs
-      image: ...
+      image: bobble head beetle sleeping in a bed
   
   - itch: adventure
     title: ADVENTURE
     credit: SOMEONE ELSE
     award:
       judge: Grigori Rasputin
-      merit: refusing to die
-      image: ...
+      merit: a mysterious meddler who refuses to die
+      image: a hearse with just married sign and trailing tin cans
+  
+  - itch: an-inquisition
+    title: An Inquisition
+    credit: larkspur et al.
+    award:
+      judge: Shimada Kiyoshi
+      merit: a mystery on an abandoned island, shrouded in the fog of forgotten memories
+      image: car key in ignition with windmill ornament on the keychain
 ---

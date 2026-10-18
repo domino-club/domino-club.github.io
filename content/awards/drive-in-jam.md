@@ -6,7 +6,7 @@ images:
   - img/drive-in-jam/banner.png
 description: "DOMINO: DECLASSIFIED AWARDS"
 artists:
-  - name: tom
-    url: https://tomsmizzle.itch.io/
+  name: tom
+  url: https://tomsmizzle.itch.io/
 awardImageHeight: 315
 ---
