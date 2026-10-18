@@ -82,4 +82,8 @@ games:
   - itch: garfenizer
     title: garfenizer
     credit: NERMAL KIN
+
+  - itch: lametations-zine
+    title: a lamentations zine
+    credit: secret fanta
 ---
