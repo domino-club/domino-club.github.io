@@ -90,4 +90,8 @@ games:
   - itch: armpits
     title: the girl who was hypnotized to huff armpits
     credit: greyfeather
+
+  - itch: dreamsick-text-engine
+    title: Dreamsick Text Engine
+    credit: Mr City
 ---
